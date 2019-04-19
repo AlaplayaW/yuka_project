@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
 import History from '../components/History';
-import SearchBar from '../components/SearchBar';
+import LegendPower from "../components/LegendPower";
+import InputGroup from "../components/InputGroup";
 
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <History />
-				<SearchBar />
+        <History />       
+        <InputGroup />
+        <LegendPower />
       </div>
     );
   }
