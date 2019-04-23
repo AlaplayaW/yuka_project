@@ -5,6 +5,7 @@ import Router from './pages/Router';
 import NavbarTitle from './components/NavbarTitle';
 
 
+
 class App extends Component {
   render() {
     return (
@@ -15,5 +16,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
