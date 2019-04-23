@@ -1,0 +1,22 @@
+h3 {
+  font-size: 1rem !important;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+}
+a.social:hover {
+  transform: translateY(-2px);
+  color: black;
+}
+a.youtube {
+  color: black;
+}
+
+a.facebook {
+  color: black;
+}
+
+a.twitter {
+  color: black;
+}

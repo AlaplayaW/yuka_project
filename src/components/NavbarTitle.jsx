@@ -37,7 +37,7 @@ export default class NavbarTitle extends React.Component {
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink className={styles.Link} href="/home/">
+								<NavLink className={styles.Link} href="/">
 									Home{" "}
 								</NavLink>
 							</NavItem>

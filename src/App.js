@@ -3,6 +3,7 @@ import "./App.css";
 
 import Router from './pages/Router';
 import NavbarTitle from './components/NavbarTitle';
+import Footer from './components/Footer';
 
 
 
@@ -12,6 +13,7 @@ class App extends Component {
       <div className="App">
         <NavbarTitle />
         <Router />
+        <Footer />
       </div>
     );
   }

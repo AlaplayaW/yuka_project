@@ -13,7 +13,6 @@ class Router extends Component {
 				<div>
 					<Switch>
 						<Route path="/" exact component={Home} />
-						<Route path="/home" component={Home} />
 						<Route path="/product/:barcode" component={ProductPage} />
 						<Route component={Error} />
 					</Switch>
