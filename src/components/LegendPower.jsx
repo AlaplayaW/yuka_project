@@ -8,6 +8,7 @@ import NoteB from "../images/noteB.png";
 import NoteC from "../images/noteC.png";
 import NoteD from "../images/noteD.png";
 import NoteE from "../images/noteE.png";
+import Unknow from "../images/unknow.png";
 
 class LegendPower extends Component {
 	constructor(props) {
@@ -48,6 +49,13 @@ class LegendPower extends Component {
 					image: NoteE,
 					description:
 						"Attention, ce produit a des pouvoirs maléfiques !!  Vérifie auprès de tes parents avant de l'ajouter au panier !!!"
+				},
+				{
+					power: "Ooops",
+					noteNutriscore: "undefined",
+					image: Unknow,
+					description:
+						"Pouvoirs mystères, à toi de les découvrir ! Demande à tes parents, ils pourront peut etre t'aider..."
 				}
 			]
 		};
