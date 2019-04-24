@@ -10,8 +10,8 @@ class Scanner extends Component {
         inputStream: {
             type : "LiveStream",
             constraints: {
-                width: 640,
-                height: 480,
+                width: 1280,
+                height: 720,
                 facingMode: "environment" // or user
             }
         },
@@ -19,10 +19,11 @@ class Scanner extends Component {
             patchSize: "medium",
             halfSample: true
         },
-        numOfWorkers: 4,
+        numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
         decoder: {
-            readers : [ "code_128_reader"]
+            readers : [ "ean_reader"]
         },
+        frequency: 20,
         locate: true
     }, function(err) {
         if (err) {
