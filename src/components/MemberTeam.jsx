@@ -6,11 +6,11 @@ const MemberTeam = props => {
 	return (
 		<div>
 			<Card body outline color="warning">
-				<div className={styles.Card}>
+				<div className={`${styles.Card} ${styles.background}`}>
 					<img src="https://i.postimg.cc/cJHrKgcD/cloe.png" alt="lalala" />
-					<h3> Prénom </h3>
+					<h3 className="text-center"> Prénom </h3>
 				</div>
-				<div classname={styles.CardText}>
+				<div className={`${styles.CardText} "d-flex justify-content-center"`}>
 					<p>
 						Ici le texte de présentation qui ne doit apparaître qu'au hover de
 						la putain de card

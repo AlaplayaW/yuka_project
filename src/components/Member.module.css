@@ -1,13 +1,27 @@
 .Card:hover img {
 	visibility: hidden;
 }
+.Card {
+	position: relative;
+}
+.Card:hover h3 {
+	visibility: hidden;
+}
+
+.background:hover {
+	background-color: peachpuff;
+}
 
 .CardText p {
 	visibility: hidden;
 }
 
-.CardText:hover {
+.CardText:hover p {
 	visibility: visible;
+}
+
+.Presentation {
+	position: absolute;
 }
 
 /* .hovereffect {
