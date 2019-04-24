@@ -53,7 +53,7 @@ export default class NavbarTitle extends React.Component {
 							</NavItem>
 							<NavItem>
 								<NavLink className={styles.Link} href="/apropos/">
-									A propos{" "}
+									A propos
 								</NavLink>
 							</NavItem>
 						</Nav>
