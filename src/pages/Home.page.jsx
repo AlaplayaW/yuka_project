@@ -12,9 +12,7 @@ class Home extends Component {
       <div>
         <History />       
         <InputGroup />
-       
         <LegendPower />
-
       </div>
     );
   }
