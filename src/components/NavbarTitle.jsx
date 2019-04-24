@@ -27,7 +27,7 @@ export default class NavbarTitle extends React.Component {
 	render() {
 		return (
 			<div className={styles.TopNavBar}>
-				<Navbar expand="md">
+				<Navbar expand="lg">
 					<NavbarBrand className={`${styles.Brand} m-auto`} href="/">
 						YuKids
 					</NavbarBrand>
