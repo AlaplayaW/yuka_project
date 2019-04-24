@@ -20,3 +20,14 @@ a.facebook {
 a.twitter {
   color: black;
 }
+
+.Mobile {
+  border-top: 1px solid black;
+  font-weight: 600 !important;
+}
+.Mobile a:hover {
+  text-decoration: none;
+}
+.Mobile a:focus {
+  color: green !important;
+}
