@@ -41,9 +41,12 @@ class AboutUs extends Component {
 		return (
 			<div>
 				<Col lg="3">
-					{this.state.members.map((team, index) => {
+					<MemberTeam />
+				</Col>
+				<Col lg="3">
+					{/* {this.state.members.map((team, index) => {
 						return <MemberTeam {...team} key={index} />;
-					})}
+					})} */}
 				</Col>
 			</div>
 		);
