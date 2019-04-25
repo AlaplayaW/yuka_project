@@ -4,7 +4,8 @@ import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<Form className="mb-5">
+			<Form className={`mb-5 p-3 ${styles.Form}`}>
+				<h1>Contactez-nous</h1>
 				<FormGroup>
 					<Col sm={11}>
 						<Label for="name"> Votre nom </Label>
