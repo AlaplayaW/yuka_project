@@ -23,7 +23,7 @@ class Scanner extends Component {
         decoder: {
             readers : [ "ean_reader"]
         },
-        frequency: 20,
+        frequency: ((navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4) * 10),
         locate: true
     }, function(err) {
         if (err) {

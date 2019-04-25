@@ -1,9 +1,8 @@
 import React from "react";
-import ReactWebcam from '../barcode-scanner/react-webcam';
 import SearchInput from "./SearchInput";
 import SearchButton from "./SearchButton";
-import { Link, Redirect} from "react-router-dom";
-import App from "../quagga-cra/App"
+import {Redirect} from "react-router-dom";
+import Qapp from "../quagga-cra/App"
 
 const homePageStyle = {
   display: "flex",
@@ -33,8 +32,7 @@ export default class InputGroup extends React.Component {
       
         <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
         <SearchButton barcode={inputValue} />
-        {/* <ReactWebcam onScan={barCode => {this.setState({ barCode }); */}
-        <App />
+        <Qapp />
         </div>
     )
     }

@@ -5,8 +5,6 @@ class Result extends Component {
   render() {
     const result = this.props.result
 
-
-
     if (!result) { return null } 
 
     return (
@@ -14,8 +12,6 @@ class Result extends Component {
       
     )
   }
-
-  
 }
 
 export default Result

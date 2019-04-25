@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Scanner from './Scanner';
-import Result from './Result';
-import Quagga from "quagga"
 import {Redirect} from "react-router-dom";
 
 
@@ -22,14 +20,14 @@ constructor(props){
 
   bestBarcode = (array) => {
 
-    if(array.length == 0)
+    if(array.length === 0)
         return null;
     let modeMap = {};
     let maxEl = array[0], maxCount = 1;
     for(let i = 0; i < array.length; i++)
     {
         let el = array[i];
-        if(modeMap[el] == null)
+        if(modeMap[el] === null)
             modeMap[el] = 1;
         else
             modeMap[el]++;  
@@ -43,50 +41,26 @@ constructor(props){
 }
 
   _onDetected = (result) => {
-    if (this.state.numberOfScans < 50) {
+    if (this.state.numberOfScans < 40) {
     let pushing = this.state.results.concat(result.codeResult.code)
     let incre = this.state.numberOfScans + 1
     this.setState({numberOfScans: incre})
     this.setState({results: pushing});
     console.log(this.state.results);
     console.log(this.state.numberOfScans)
-  }
+  } else if (this.state.numberOfScans >= 40) {
     this.setState({bestResult: this.bestBarcode(this.state.results)})
-    console.log(`bestresult: ${this.state.bestResult}`);
+    console.log(`bestresult: ${this.state.bestResult}`)
+    console.log(`scans ${this.state.numberOfScans}`)
   }
+}
 
 
 
   render() {
 
-    function bestBarcode(array) {
-
-      if(array.length == 0)
-          return null;
-      let modeMap = {};
-      let maxEl = array[0], maxCount = 1;
-      for(let i = 0; i < array.length; i++)
-      {
-          let el = array[i];
-          if(modeMap[el] == null)
-              modeMap[el] = 1;
-          else
-              modeMap[el]++;  
-          if(modeMap[el] > maxCount)
-          {
-              maxEl = el;
-              maxCount = modeMap[el];
-          }
-      }
-      return maxEl;
-  }
-
-  let test = [2,3,4,2,3,4,5,2,3,2,0];
-  test = bestBarcode(test);
-  console.log(test);
-
   const barCode = this.state.bestResult;
-  if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
+  if (barCode) {return <Redirect to={`/product/${barCode}`}/>} else {
 
     return (
       <div>
@@ -100,7 +74,7 @@ constructor(props){
       </div>
     )
   }
-
+  }
 }
 
 export default App;
