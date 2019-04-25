@@ -5,9 +5,10 @@ import { Row, Col } from "reactstrap";
 const ContactPage = () => {
 	return (
 		<div>
-			<h1>Contactez-nous</h1>
+			
 			<Row>
 				<Col>
+					<h1>Contactez-nous</h1>
 					<Contact />
 				</Col>
 			</Row>

@@ -28,7 +28,7 @@ export default class NavbarTitle extends React.Component {
 		return (
 			<div className={styles.TopNavBar}>
 				<Navbar expand="lg">
-					<NavbarBrand className={`${styles.Brand} m-auto`} href="/">
+					<NavbarBrand className={`${styles.Brand} m-auto px-5`} href="/">
 						YuKids
 					</NavbarBrand>
 					{/*Centre le titre quand on passe sur mobile*/}

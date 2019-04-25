@@ -4,7 +4,7 @@ import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<Form>
+			<Form className="mb-5">
 				<FormGroup>
 					<Col sm={11}>
 						<Label for="name"> Votre nom </Label>
@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<Col sm={11}>
-					<Button> Envoyer </Button>
+					<Button className="mb-5" > Envoyer </Button>
 				</Col>
 			</Form>
 		);
