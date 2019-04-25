@@ -8,23 +8,84 @@ class App extends Component {
 
   state = {
     scanning: false,
-    results: []
+    results: [],
+    bestResult: null,
+    numberOfScans: 0
   }
 
   _scan = () => {
     this.setState({scanning: !this.state.scanning});
   }
 
+  bestBarcode = (array) => {
+
+    if(array.length == 0)
+        return null;
+    let modeMap = {};
+    let maxEl = array[0], maxCount = 1;
+    for(let i = 0; i < array.length; i++)
+    {
+        let el = array[i];
+        if(modeMap[el] == null)
+            modeMap[el] = 1;
+        else
+            modeMap[el]++;  
+        if(modeMap[el] > maxCount)
+        {
+            maxEl = el;
+            maxCount = modeMap[el];
+        }
+    }
+    return maxEl;
+}
+
   _onDetected = (result) => {
-    // this.setState({results: this.state.results.concat([result])});
-    const results = result;    
-    this.setState({results: results.codeResult.code});
+    if (this.state.numberOfScans < 20) {
+    let pushing = this.state.results.concat(result.codeResult.code)
+    let incre = this.state.numberOfScans + 1
+    this.setState({numberOfScans: incre})
+    this.setState({results: pushing});
     console.log(this.state.results);
-    
+    console.log(this.state.numberOfScans)
   }
+    this.setState({bestResult: this.bestBarcode(this.state.results)})
+    console.log(`bestresult: ${this.state.bestResult}`);
+  }
+
+  
+
+  
+
+  
 
 
   render() {
+
+    function bestBarcode(array) {
+
+      if(array.length == 0)
+          return null;
+      let modeMap = {};
+      let maxEl = array[0], maxCount = 1;
+      for(let i = 0; i < array.length; i++)
+      {
+          let el = array[i];
+          if(modeMap[el] == null)
+              modeMap[el] = 1;
+          else
+              modeMap[el]++;  
+          if(modeMap[el] > maxCount)
+          {
+              maxEl = el;
+              maxCount = modeMap[el];
+          }
+      }
+      return maxEl;
+  }
+
+  let test = [2,3,4,2,3,4,5,2,3,2,0];
+  test = bestBarcode(test);
+  console.log(test);
 
     return (
       <div>
