@@ -1,6 +1,8 @@
 import React from "react";
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
+import styles from "./Collapse.module.css"; 
+
 export default class CollapseFaq extends React.Component{
   constructor(props){
     super(props)
@@ -20,9 +22,9 @@ collapse: false,
 
     return (
       <div style={{textAlign: 'center'}}>
-        <Button color="success" onClick={this.toggle} style={{marginBottom: '0.5rem', width: '60%'}}>{this.props.title}</Button>
-        <Collapse isOpen={this.state.collapse}>
-          <Card style={{width: '80'}}>
+        <Button color="success" onClick={this.toggle} style={{marginBottom: '0.5rem', width: '70%', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>{this.props.title}</Button>
+        <Collapse className={styles.center} isOpen={this.state.collapse}>
+          <Card style={{border: "white", fontFamily: 'Patrick Hand SC', fontSize: '1.5em', width: '70%'}}>
             <CardBody>
           {this.props.description}
             </CardBody>

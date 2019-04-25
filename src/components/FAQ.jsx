@@ -9,10 +9,6 @@ export default function Faq() {
       description = "Demande à Google"
       />     
       <CollapseFaq 
-      title = "Comment a été constituée la base de données?" 
-      description = "Yukids s’est appuyé sur Open Food Facts, une base de données ouverte et collaborative qui fonctionne sur le même modèle que Wikipedia."
-      />   
-      <CollapseFaq 
       title = "Comment est financée l’application ?" 
       description = "Par vos impots"
       /> 
@@ -39,14 +35,6 @@ export default function Faq() {
       <CollapseFaq 
       title = "Pourquoi faut-il s’inscrire pour utiliser Yuka ?" 
       description = "Pour pouvoir revendre vos données"
-      /> 
-      <CollapseFaq 
-      title = "Yuka a-t-il accès à mes photos ou à mes contacts mails ?" 
-      description = "Evidement"
-      /> 
-      <CollapseFaq 
-      title = "Comment se désabonner pour ne plus recevoir la newsletter ?" 
-      description = "Impossible"
       /> 
     </div>
   )

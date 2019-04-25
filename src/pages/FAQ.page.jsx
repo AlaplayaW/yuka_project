@@ -4,8 +4,8 @@ import { Row, Col } from "reactstrap";
 
 const FAQPage = () => {
 	return (
-		<div>
-			<h1 style={{display: 'flex', justifyContent: 'center', marginTop: '0.6em', marginBottom: '1em'}}>Foire Aux Questions</h1>
+		<div style={{backgroundColor: '#fede4f'}}>
+ 		<h1 style={{textAlign:"center", fontFamily: 'Sonsie One'}}>Foire Aux Questions</h1>
 			<Row>
 				<Col>
 					<Faq />
