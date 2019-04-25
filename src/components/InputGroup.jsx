@@ -2,7 +2,7 @@ import React from "react";
 import SearchInput from "./SearchInput";
 import SearchButton from "./SearchButton";
 import {Redirect} from "react-router-dom";
-import Qapp from "../quagga-cra/App"
+import Qapp from "../quagga/App"
 
 const homePageStyle = {
   display: "flex",
