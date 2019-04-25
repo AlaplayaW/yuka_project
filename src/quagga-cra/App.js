@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import Scanner from './Scanner';
 import Result from './Result';
 import Quagga from "quagga"
+import {Redirect} from "react-router-dom";
 
 
 class App extends Component {
-
-  state = {
+constructor(props){
+  super(props);
+  this.state = {
     scanning: false,
     results: [],
     bestResult: null,
     numberOfScans: 0
   }
+}
 
   _scan = () => {
     this.setState({scanning: !this.state.scanning});
@@ -40,7 +43,7 @@ class App extends Component {
 }
 
   _onDetected = (result) => {
-    if (this.state.numberOfScans < 20) {
+    if (this.state.numberOfScans < 50) {
     let pushing = this.state.results.concat(result.codeResult.code)
     let incre = this.state.numberOfScans + 1
     this.setState({numberOfScans: incre})
@@ -52,11 +55,6 @@ class App extends Component {
     console.log(`bestresult: ${this.state.bestResult}`);
   }
 
-  
-
-  
-
-  
 
 
   render() {
@@ -86,6 +84,9 @@ class App extends Component {
   let test = [2,3,4,2,3,4,5,2,3,2,0];
   test = bestBarcode(test);
   console.log(test);
+
+  const barCode = this.state.bestResult;
+  if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
 
     return (
       <div>

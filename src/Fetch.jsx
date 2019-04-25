@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Axios from 'axios';
+import { Link, Redirect} from "react-router-dom";
 
 export default class Fetch extends React.Component{
 	constructor(props){
@@ -55,6 +56,9 @@ export default class Fetch extends React.Component{
 				return renderLoading();
 			}
 			if(isSuccess){
+				if (this.props.product === undefined) {
+return <Redirect to={`/home`}/>
+				} else
 				return renderSuccess(result);
 			}
 			return null;
