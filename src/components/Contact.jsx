@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
 
+import styles from "./Contact.module.css";
+
 export default class Contact extends React.Component {
 	render() {
 		return (
