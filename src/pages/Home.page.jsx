@@ -11,10 +11,8 @@ class Home extends Component {
     return (
       <div>
         <History />       
-        <InputGroup />
-       
         <LegendPower />
-
+        <InputGroup />
       </div>
     );
   }

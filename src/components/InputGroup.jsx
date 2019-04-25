@@ -8,7 +8,7 @@ const homePageStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh"
+  height: "10vh",
 };
 
 export default class InputGroup extends React.Component {
@@ -26,7 +26,7 @@ export default class InputGroup extends React.Component {
     const { inputValue, barCode } = this.state;
     if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
     return (
-      <div className="w-80 p-3" style={{backgroundColor:"rgb(247, 211, 6)", homePageStyle}}>
+      <div className="d-none d-lg-block" style={{backgroundColor:"rgb(255, 231, 94)", homePageStyle}}>
       
         <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
         <SearchButton barcode={inputValue} />
