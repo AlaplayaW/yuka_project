@@ -1,14 +1,14 @@
 .TopNavBar {
   font-family: 'Patrick Hand SC', cursive;
   background-color:  rgb(247, 211, 6);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .Link {
-  color: black!important ;
+  color: darkslategrey!important ;
 }
-.Brand{
+.Brand {
   font-family: 'Sonsie One', cursive;
-  color: black ;
+  color: darkslategrey ;
   text-align: center;
   font-size: 2rem !important;
 }
