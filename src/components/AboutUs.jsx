@@ -12,6 +12,12 @@ class AboutUs extends Component {
 		this.state = {
 			members: [
 				{
+					name: "Perrine",
+					presentation:
+						"La super héroïne du scan !! Elle accumule les supers pouvoirs grâce à ses scans ",
+					image: Perrine
+				},
+				{
 					name: "Jim",
 					presentation:
 						"Sauveur de tortues, Jim mène un combat quotidien pour rendre le monde meilleur !! A bat les produits",
@@ -23,12 +29,7 @@ class AboutUs extends Component {
 						"Le héro de l'info, il cherche et déniche toutes les infos produits pour les mettre en ligne!! Rien ne lui échappe",
 					image: JB
 				},
-				{
-					name: "Perrine",
-					presentation:
-						"La super héroïne du scan !! Elle accumule les supers pouvoirs grâce à ses scans ",
-					image: Perrine
-				},
+
 				{
 					name: "Cloé",
 					presentation: " lalalala",
@@ -39,15 +40,12 @@ class AboutUs extends Component {
 	}
 	render() {
 		return (
-			<div>
-				<Col lg="3">
-					<MemberTeam />
-				</Col>
-				<Col lg="3">
-					{/* {this.state.members.map((team, index) => {
+			<div className="container-fluid">
+				<Row className="d-flex justify-content-center">
+					{this.state.members.map((team, index) => {
 						return <MemberTeam {...team} key={index} />;
-					})} */}
-				</Col>
+					})}
+				</Row>
 			</div>
 		);
 	}
