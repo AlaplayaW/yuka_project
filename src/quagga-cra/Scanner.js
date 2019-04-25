@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Quagga from 'quagga';
+import './Scanner.css'
 
 
 class Scanner extends Component {
@@ -8,7 +9,9 @@ class Scanner extends Component {
 
     Quagga.init({
         inputStream: {
-            type : "LiveStream",
+          name : "Live",
+          type : "LiveStream",
+          target: document.querySelector('#interactive'),
             constraints: {
                 width: 1280,
                 height: 720,
@@ -19,10 +22,12 @@ class Scanner extends Component {
             patchSize: "medium",
             halfSample: true
         },
+        // Adjust workers depending on user's CPU cores number
         numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
         decoder: {
             readers : [ "ean_reader"]
         },
+        // Adjust scan frequency depending on user's CPU cores number
         frequency: ((navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4) * 10),
         locate: true
     }, function(err) {
@@ -43,8 +48,18 @@ class Scanner extends Component {
   }
 
   render() {
+    
     return (
-      <div id="interactive" className="viewport"/>
+      <>
+      {/* <div id="interactive" className="viewport" /> */}    
+      {/* </div> */}
+
+      <div id="interactive" className="viewport">
+      <video autoPlay={true} preload="auto" src="" muted={true} playsInline={true}></video>
+      <canvas id="canvas" className="drawingBuffer"></canvas>
+      </div>
+
+      </>
     )
   }
 }

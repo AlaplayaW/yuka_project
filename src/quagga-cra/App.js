@@ -18,6 +18,8 @@ constructor(props){
     this.setState({scanning: !this.state.scanning});
   }
 
+
+  // Most occuring barcode function
   bestBarcode = (array) => {
 
     if(array.length === 0)
@@ -40,6 +42,7 @@ constructor(props){
     return maxEl;
 }
 
+// When scanner detects a barcode
   _onDetected = (result) => {
     if (this.state.numberOfScans < 40) {
     let pushing = this.state.results.concat(result.codeResult.code)
@@ -55,25 +58,23 @@ constructor(props){
   }
 }
 
-
-
   render() {
 
+  // Product page redirection when bestBarcode() returns the most occuring barcode 
   const barCode = this.state.bestResult;
-  if (barCode) {return <Redirect to={`/product/${barCode}`}/>} else {
+  if (barCode === null) {
 
     return (
       <div>
           <button onClick={this._scan}>{this.state.scanning ? 'Stop' : 'Start'}</button>
-          {/* <h1>{this.state.results}</h1> */}
-          {/* {console.log(this.state.results.map((result, i) => (<Result key={result.codeResult.code + i} result={result} />)))} */}
-          {/* <ul className="results">
-            {this.state.results.map((result, i) => (<Result key={result.codeResult.code + i} result={result} />))}
-          </ul> */}
           {this.state.scanning ? <Scanner onDetected={this._onDetected}/> : null}
       </div>
     )
-  }
+  } else {
+
+    return <Redirect to={`/product/${barCode}`}/>
+    
+  } 
   }
 }
 

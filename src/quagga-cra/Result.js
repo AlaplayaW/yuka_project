@@ -6,7 +6,6 @@ class Result extends Component {
     const result = this.props.result
 
     if (!result) { return null } 
-
     return (
       <li> {result.codeResult.code} [{result.codeResult.format}] </li>
       
