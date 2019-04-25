@@ -26,7 +26,7 @@ export default class InputGroup extends React.Component {
     const { inputValue, barCode } = this.state;
     if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
     return (
-      <div className="d-none d-lg-block" style={{backgroundColor:"rgb(255, 231, 94)", homePageStyle}}>
+      <div className="" style={{backgroundColor:"rgb(255, 231, 94)", homePageStyle}}>
       
         <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
         <SearchButton barcode={inputValue} />

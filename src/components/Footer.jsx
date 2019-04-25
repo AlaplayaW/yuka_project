@@ -53,7 +53,7 @@ export default function Footer() {
 						<a href="/apropos/" className="py-3" style={{ color: "black" }}>
 							A propos
 						</a>
-            <Badge href="#" color="" pill className={`p-1`}>
+            <Badge href="./scan" color="" pill className={`p-1`}>
 							<img className="" src={Barcode} style={{ width: "50px" }} />
 						</Badge>
 						<a href="/contact/" className="py-3" style={{ color: "black" }}>

@@ -12,7 +12,7 @@ class History extends Component {
 					Hey, tu sais quoi? <br /> Il parait que les aliments ont des supers
 					pouvoirs! Tu veux les voir?
 				</p>
-				<Button className={`${styles.notice} d-none d-lg-block`}>
+				<Button href="./scan/" className={`${styles.notice} d-none d-lg-block`}>
 					Scan vite le code barre pour les découvrir !
 					</Button>
 				<div className={styles.superHero}>
