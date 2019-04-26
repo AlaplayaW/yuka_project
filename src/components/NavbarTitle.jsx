@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./NavbarTitle.module.css";
+import Logo from "../images/logo_yukids1.png";
 import {
 	Collapse,
 	Navbar,
@@ -29,7 +30,7 @@ export default class NavbarTitle extends React.Component {
 			<div className={styles.TopNavBar}>
 				<Navbar expand="lg">
 					<NavbarBrand className={`${styles.Brand} m-auto px-5`} href="/">
-						YuKids
+						<img src={Logo} alt="logo yukids" />
 					</NavbarBrand>
 					{/*Centre le titre quand on passe sur mobile*/}
 					<NavbarToggler className="d-none" onClick={this.toggle} />
