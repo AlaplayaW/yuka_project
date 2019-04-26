@@ -65,7 +65,7 @@ class LegendPower extends Component {
 	render() {
 		return (
 			<div className={`${styles.container}`}>
-				<h1 className="p-3 text-center">
+				<h1 className={`${styles.h1} p-3 text-center`}>
 					Découvre les supers pouvoirs de tes produits
 				</h1>
 				<CardDeck className="justify-content-center">
