@@ -1,10 +1,13 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
 
+import styles from "./Contact.module.css";
+
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<Form>
+			<Form className={`mb-5 p-3 ${styles.Form}`}>
+				<h1>Contactez-nous</h1>
 				<FormGroup>
 					<Col sm={11}>
 						<Label for="name"> Votre nom </Label>
@@ -45,7 +48,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<Col sm={11}>
-					<Button> Envoyer </Button>
+					<Button className="mb-5" > Envoyer </Button>
 				</Col>
 			</Form>
 		);

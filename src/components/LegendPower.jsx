@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import SuperPower from "./SuperPower";
+import styles from "./LegendPower.module.css";
 import AccordionPower from "./AccordionPower";
 import { CardDeck } from "reactstrap";
 import NoteA from "../images/noteA.png";
@@ -63,8 +64,8 @@ class LegendPower extends Component {
 
 	render() {
 		return (
-			<div>
-				<h1 className="pl-3">Découvre les supers pouvoirs de tes produits</h1>
+			<div className={`${styles.container} mx-2`}>
+				<h1 className="p-3 text-center">Découvre les supers pouvoirs de tes produits</h1>
 				<CardDeck>
 					{this.state.power.map((powerList, index) => {
 						return <SuperPower {...powerList} key={index} />;

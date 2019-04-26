@@ -126,9 +126,7 @@ export default class Webcam extends Component {
 
   componentDidMount() {
     if (!hasGetUserMedia()) return;
-
     Webcam.mountedInstances.push(this);
-
     if (!this.state.hasUserMedia && !Webcam.userMediaRequested) {
       this.requestUserMedia();
     }
@@ -392,11 +390,11 @@ drawResult(context, localization, text) {
 
 
   render() {
-    
+    this.scanBarcode();
     return (
       <div className="main"> 
       <div id='videoview' width={this.props.width} height={this.props.height}>
-        <button onClick={this.scanBarcode}>Scan Barcodes</button>
+        {/* <button onClick={this.scanBarcode}>Scan Barcodes</button> */}
         <video
           autoPlay
           width={this.props.width}

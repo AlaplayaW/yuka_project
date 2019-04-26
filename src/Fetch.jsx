@@ -55,6 +55,9 @@ export default class Fetch extends React.Component{
 				return renderLoading();
 			}
 			if(isSuccess){
+				// if (this.props.product === undefined) {
+				// 	return <Redirect to={`/home`}/>
+				// } else
 				return renderSuccess(result);
 			}
 			return null;

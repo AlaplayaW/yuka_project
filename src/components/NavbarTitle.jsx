@@ -27,17 +27,17 @@ export default class NavbarTitle extends React.Component {
 	render() {
 		return (
 			<div className={styles.TopNavBar}>
-				<Navbar expand="md">
-					<NavbarBrand className={`${styles.Brand} m-auto`} href="/">
+				<Navbar expand="lg">
+					<NavbarBrand className={`${styles.Brand} m-auto px-5`} href="/">
 						YuKids
-					</NavbarBrand>{" "}
+					</NavbarBrand>
 					{/*Centre le titre quand on passe sur mobile*/}
-					<NavbarToggler className="d-none" onClick={this.toggle} />{" "}
+					<NavbarToggler className="d-none" onClick={this.toggle} />
 					{/*Fais disparaitre le toggler quand on passe sur mobile */}
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink className={styles.Link} href="/home/">
+								<NavLink className={styles.Link} href="/">
 									Home{" "}
 								</NavLink>
 							</NavItem>
