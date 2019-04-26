@@ -6,9 +6,9 @@ import Home from "./Home.page";
 import Error from "./Error.page";
 import ProductPage from "./Product.page";
 import ContactPage from "./Contact.page";
+import AboutusPage from "./Aboutus.page";
 import FAQPage from "./FAQ.page";
 import ScanPage from "./Scan.page";
-
 
 class Router extends Component {
 	render() {
@@ -19,9 +19,9 @@ class Router extends Component {
 						<Route path="/" exact component={Home} />
 						<Route path="/product/:barcode" component={ProductPage} />
 						<Route path="/contact" component={ContactPage} />
+						<Route path="/apropos" component={AboutusPage} />
 						<Route path="/FAQ" component={FAQPage} />
 						<Route path="/scan" component={ScanPage} />
-
 						<Route component={Error} />
 					</Switch>
 				</div>
