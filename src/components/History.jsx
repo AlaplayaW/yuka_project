@@ -10,10 +10,7 @@ class History extends Component {
 		return (
 			<div className={styles.bgBlock}>
 				<Row>
-					<Col
-						lg="6"
-						className={`${styles.imgSuper} 	d-flex justify-content-center`}
-					>
+					<Col lg="6" className={`${styles.imgSuper}`}>
 						<CardImg src={SuperHero} alt="" />
 					</Col>
 					<Col lg="6" className="align-self-center">

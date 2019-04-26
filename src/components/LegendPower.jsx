@@ -56,7 +56,7 @@ class LegendPower extends Component {
 					noteNutriscore: "undefined",
 					image: Unknow,
 					description:
-						"Pouvoirs mystères, à toi de les découvrir ! Demande à tes parents, ils pourront peut etre t'aider..."
+						"Pouvoirs mystères, à toi de les découvrir ! Demande à tes parents, ils pourront peut-être t'aider..."
 				}
 			]
 		};
@@ -65,7 +65,9 @@ class LegendPower extends Component {
 	render() {
 		return (
 			<div className={`${styles.container}`}>
-				<h1 className="p-3 text-center">Découvre les supers pouvoirs de tes produits</h1>
+				<h1 className="p-3 text-center">
+					Découvre les supers pouvoirs de tes produits
+				</h1>
 				<CardDeck className="justify-content-center">
 					{this.state.power.map((powerList, index) => {
 						return <SuperPower {...powerList} key={index} />;
