@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<Form className={`mb-5 p-3 ${styles.Form}`}>
+			<Form className={`p-3 ${styles.Form}`}>
 				<h1>Contactez-nous</h1>
 				<FormGroup>
 					<Col sm={11}>

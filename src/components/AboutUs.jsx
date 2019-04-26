@@ -45,10 +45,10 @@ class AboutUs extends Component {
 		return (
 			<div className="container-fluid">
 				<Row className="d-flex justify-content-center m-5">
-					<h1> La team Yukids </h1>
+					{/* <p className={styles.titleMemberPage}> LA TEAM YUKIDS </p> */}
 				</Row>
-				<Row className="d-flex justify-content-center m-5">
-					<Col lg={{ size: 3, offset: 1 }} className="mt-3">
+				<Row className="d-flex justify-content-center">
+					<Col lg={{ size: 3, offset: 1 }} className="m-3">
 						<Card className={styles.hovereffect} body outline color="warning">
 							<CardImg src={Perrine} alt="lalala" />
 							<p>
@@ -58,7 +58,7 @@ class AboutUs extends Component {
 							<CardTitle className={styles.CardTitle}> PERRINE </CardTitle>
 						</Card>
 					</Col>
-					<Col lg={{ size: 3, offset: 1 }} className="mt-3">
+					<Col lg={{ size: 3, offset: 1 }} className="m-3">
 						<Card className={styles.hovereffect} body outline color="warning">
 							<CardImg src={Jim} alt="lalala" />
 							<p>
@@ -69,8 +69,8 @@ class AboutUs extends Component {
 						</Card>
 					</Col>
 				</Row>
-				<Row className="d-flex justify-content-center m-5">
-					<Col lg={{ size: 3, offset: 1 }} className="mt-3">
+				<Row className="d-flex justify-content-center">
+					<Col lg={{ size: 3, offset: 1 }} className="m-3">
 						<Card className={styles.hovereffect} body outline color="warning">
 							<CardImg src={JB} alt="lalala" />
 							<p>
@@ -81,7 +81,7 @@ class AboutUs extends Component {
 							<CardTitle className={styles.CardTitle}>JEAN-BAPTISTE</CardTitle>
 						</Card>
 					</Col>
-					<Col lg={{ size: 3, offset: 1 }} className="mt-3">
+					<Col lg={{ size: 3, offset: 1 }} className="m-3">
 						<Card className={styles.hovereffect} body outline color="warning">
 							<CardImg src={Cloe} alt="lalala" />
 							<p> lalala </p>
