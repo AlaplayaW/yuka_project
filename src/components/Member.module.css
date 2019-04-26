@@ -10,16 +10,12 @@
 }
 
 .hovereffect .CardImg {
-	/* display: block;
-	position: absolute; */
 	width: 100%;
 	width: auto;
-	transition: opacity 0.35s, transform 0.45s;
-	transform: translate3d(0px, -40px, 0);
 }
 
 .hovereffect .CardTitle {
-	color: red;
+	color: peru;
 	text-align: center;
 	font-size: 17px;
 	padding-bottom: 10px;
@@ -34,16 +30,17 @@
 	margin-left: 5%;
 	margin-right: 5%;
 	opacity: 0;
-	transition: opacity 0.35s, transform 0.45s;
-	transform: translate3d(-10px, 0, 0);
 }
 
 .hovereffect:hover img {
 	opacity: 0.1;
-	transform: translate3d(0, 0, 0);
+	transition: opacity 0.35s, transform 0.45s;
+	transform: translate3d(0px, -40px, 0);
 }
 
 .hovereffect:hover p {
 	opacity: 1;
 	vertical-align: bottom;
+	transition: opacity 0.35s, transform 0.45s;
+	transform: translate3d(-10px, 0, 0);
 }

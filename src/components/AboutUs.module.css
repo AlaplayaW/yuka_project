@@ -1,6 +1,8 @@
 .bgimg {
-	background-image: url("../images/ballons.jpg");
-	height: 90vh;
+	/* background-image: url("../images/ballons.jpg"); */
+	/* background-image: url("../images/malbouffe.png"); */
+	background-image: url("../images/bg-aboutus.png");
+	height: 150vh;
 	/* background-color: red; */
 }
 

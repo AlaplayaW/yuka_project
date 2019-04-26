@@ -6,7 +6,6 @@ import AboutUs from "../components/AboutUs";
 const AboutusPage = () => {
 	return (
 		<div className={styles.bgimg}>
-			<h1> La team Yukids </h1>
 			<AboutUs />
 		</div>
 	);
