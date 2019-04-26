@@ -18,7 +18,7 @@ export default function Footer() {
 			<div className="d-none d-lg-block">
 				<div
 					className={`container-fluid d-flex justify-content-between mt-auto py-3`}
-					style={{ backgroundColor: "rgb(247, 211, 6)" }}
+					style={{ backgroundColor: "#fede4f" }}
 				>
 					<h3 className="p-2 mb-0">@ Cloé, Perrine, Jim, Doc</h3>
 					<div>
