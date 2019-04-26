@@ -44,14 +44,14 @@ constructor(props){
 
 // When scanner detects a barcode
   _onDetected = (result) => {
-    if (this.state.numberOfScans < 40) {
+    if (this.state.numberOfScans < 20) {
     let pushing = this.state.results.concat(result.codeResult.code)
     let incre = this.state.numberOfScans + 1
     this.setState({numberOfScans: incre})
     this.setState({results: pushing});
     console.log(this.state.results);
     console.log(this.state.numberOfScans)
-  } else if (this.state.numberOfScans >= 40) {
+  } else if (this.state.numberOfScans >= 20) {
     this.setState({bestResult: this.bestBarcode(this.state.results)})
     console.log(`bestresult: ${this.state.bestResult}`)
     console.log(`scans ${this.state.numberOfScans}`)
