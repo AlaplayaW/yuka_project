@@ -20,16 +20,22 @@ class History extends Component {
 						<p className={`${styles.text} d-none d-lg-block m-5`}>
 							Welcome petit !! <br />
 							Devine quoi? Il paraît que les aliments ont des supers pouvoirs!
+							<br />
 							Pour les découvrir, suis les instructions ;)
 						</p>
 						<Button
 							href="./scan"
-							className={`${styles.notice} d-none d-lg-block m-5`}
+							color="info"
+							className="d-none d-lg-block m-5"
 						>
 							Scan vite le code barre pour les découvrir !
 						</Button>
-						<div className={`${styles.noticeMobile} d-lg-none`}>
-							<p>Appuie sur le code barre pour scanner les produits !</p>
+
+						<div className={`${styles.text} d-lg-none`}>
+							<p>
+								Appuie sur le code barre pour scanner les produits et découvrir
+								leurs supers pouvoirs!
+							</p>
 						</div>
 					</Col>
 				</Row>

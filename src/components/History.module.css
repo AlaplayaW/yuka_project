@@ -6,23 +6,43 @@
 
 .bgBlock {
 	background-color: #fede4f;
+	/* height: 83vh; */
 }
 
 .imgSuper {
 	width: auto;
 }
 
+.notice {
+	font-family: "Patrick Hand", cursive;
+	font-size: 1.5rem;
+	padding: 5px;
+	align-self: flex-start;
+	background-color: #44a49d;
+}
+
 .text {
 	font-family: "Patrick Hand", cursive;
 	text-align: center;
+	font-size: 2rem;
+	color: #86328b;
+	/* background-color: #44a49d;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px;
+	padding: 5px;
+	align-self: flex-start; */
+}
+
+/* .noticeMobile {
+	font-family: "Patrick Hand", cursive;
 	font-size: 1.5rem;
 	color: darkslategrey;
-	background-color: rgb(233, 233, 233);
+	background-color: #44a49d;
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px;
 	padding: 5px;
 	align-self: flex-start;
-}
+} */
 
 /* -------------- COMPONENT WITH CSS GRID -------------- */
 /* 
