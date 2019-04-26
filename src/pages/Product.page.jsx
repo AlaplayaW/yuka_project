@@ -2,6 +2,8 @@ import React from "react";
 
 import Fetch from "../Fetch";
 import Product from "../components/Product";
+import {Redirect} from "react-router-dom";
+
 
 // Le nom du pattern : 'render-props' ---- cf. Inversion de la dépendance >> COMMENT TO KEEP
 export default function ProductPage({ match }) {
@@ -13,6 +15,10 @@ export default function ProductPage({ match }) {
 			renderError={() => "Oups.... une erreur est survenue"}
 			renderLoading={() => "Chargement du produit en cours ...."}
 			renderSuccess={({ product }) => {
+				// redirect if product not found
+				if (product === undefined) {
+					return <Redirect to={`/home`}/>
+				} else
 				return (
 					<Product
 						name={product.product_name_fr}
