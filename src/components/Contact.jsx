@@ -7,9 +7,9 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<Form className={`p-3 ${styles.Form}`}>
-				<h1>Contactez-nous</h1>
+				<h1 className={styles.Contact}>Contactez-nous</h1>
 				<FormGroup>
-					<Col sm={11}>
+					<Col sm={{size: 10, offset: 1}}>
 						<Label for="name"> Votre nom </Label>
 						<Input
 							type="name"
@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<FormGroup>
-					<Col sm={11}>
+					<Col sm={{size: 10, offset: 1}}>
 						<Label for="exampleEmail"> Email </Label>
 						<Input
 							type="email"
@@ -31,7 +31,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<FormGroup>
-					<Col sm={11}>
+					<Col sm={{size: 10, offset: 1}}>
 						<Label for="text"> Objet </Label>
 						<Input
 							type="text"
@@ -42,13 +42,13 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<FormGroup>
-					<Col sm={11}>
+					<Col sm={{size: 10, offset: 1}}>
 						<Label for="message"> Votre message </Label>
 						<Input type="textarea" name="text" id="message" />
 					</Col>
 				</FormGroup>
-				<Col sm={11}>
-					<Button className="mb-5" > Envoyer </Button>
+				<Col sm={{size: 10, offset: 1}}>
+					<Button className={`p-3 ${styles.Button}`}> Envoyer </Button>
 				</Col>
 			</Form>
 		);
