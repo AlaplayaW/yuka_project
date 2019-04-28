@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CollapseFaq from './Collapse';
 
 export default function Faq() {

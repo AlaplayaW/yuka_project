@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Row, Col, CardImg } from "reactstrap";
-
+import {Link} from "react-router-dom"
 import styles from "./History.module.css";
 import SuperHero from "../images/herohomepage.png";
 
@@ -21,7 +21,7 @@ class History extends Component {
 							Pour les découvrir, suis les instructions ;)
 						</p>
 						<Button
-							href="./scan"
+							tag={Link} to="/scan"
 							color="info"
 							className="d-none d-lg-block m-5"
 						>

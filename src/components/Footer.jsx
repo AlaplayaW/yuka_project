@@ -8,6 +8,7 @@ import {
 	faFacebook,
 	faTwitter
 } from "@fortawesome/free-brands-svg-icons";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
 	return (
@@ -53,8 +54,8 @@ export default function Footer() {
 						<a href="/apropos/" className="py-3" style={{ color: "black" }}>
 							A propos
 						</a>
-            <Badge href="./scan" color="" pill className={`p-1`}>
-							<img className="" src={Barcode} style={{ width: "50px" }} />
+            <Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
+							<img className="" src={Barcode} style={{ width: "50px" }} alt="scan"/>
 						</Badge>
 						<a href="/contact/" className="py-3" style={{ color: "black" }}>
 							Contact
