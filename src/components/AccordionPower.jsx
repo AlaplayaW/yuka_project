@@ -7,6 +7,8 @@ import {
 	Col
 } from "reactstrap";
 
+import styles from "./AccordionPower.module.css"
+
 class AccordionPower extends Component {
 	constructor(props) {
 		super(props);
@@ -22,12 +24,12 @@ class AccordionPower extends Component {
 		return (
 			<div className=" d-none d-md-block d-sm-block d-block d-lg-none p-4">
 				<Row className="d-flex align-items-center">
-					<Col sm="3">
+					<Col sm="2">
 						<CardImg
 							src={this.props.image}
 							alt="Power"
 							style={{ height: 100, width: 100 }}
-							className="d-flex m-auto"
+							className={`${styles.image} d-flex m-auto`}
 						/>
 					</Col>
 					<Col sm="4">

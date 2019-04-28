@@ -9,7 +9,7 @@ class History extends Component {
 	render() {
 		return (
 			<div className={styles.bgBlock}>
-				<Row className="container-fluid">
+				<Row className="mx-0">
 					<Col lg="6" className={`${styles.imgSuper}`}>
 						<CardImg src={SuperHero} alt="" />
 					</Col>
@@ -18,14 +18,14 @@ class History extends Component {
 							Welcome petit !! <br />
 							Devine quoi? Il paraît que les aliments ont des supers pouvoirs!
 							<br />
-							Pour les découvrir, suis les instructions ;)
+							Ils sont cachés dans les codes barres ;-)
 						</p>
 						<Button
 							href="./scan"
 							color="info"
 							className="d-none d-lg-block m-5"
 						>
-							Scan vite le code barre pour les découvrir !
+							Click ici pour accéder au scanner !
 						</Button>
 
 						<div className={`${styles.text} d-lg-none`}>

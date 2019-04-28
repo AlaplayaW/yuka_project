@@ -4,13 +4,17 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 const SuperPower = props => {
 	return (
-		<div className="col-3 mx-2 text-center">
+		<div className="col-3 m-2 text-center">
 			<Card
-				className={`${styles.card} bg-transparent mx-3 d-none d-lg-flex`}
+				className={`${styles.card} ${styles.HvrGrowShadow} mx-0 my-2 d-none d-lg-flex`}
 			>
-				<CardImg src={props.image} alt="Power" className={`${styles.image} mx-auto`} />
-				<CardBody className="p-1">
-					<CardTitle className={`${styles.cardTitle} p-1`}>{props.power}</CardTitle>
+				<CardTitle className={`${styles.cardTitle} pt-3`}>{props.power}</CardTitle>
+				<CardImg
+					src={props.image}
+					alt="Power"
+					className={`${styles.image} mx-auto`}
+				/>
+				<CardBody className={`${styles.cardText} p-1`}>
 					<CardText>{props.description}</CardText>
 				</CardBody>
 			</Card>

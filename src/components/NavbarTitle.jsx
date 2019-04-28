@@ -27,9 +27,9 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<div className={styles.TopNavBar}>
+			<div>
 				<Navbar expand="lg">
-					<NavbarBrand className={`${styles.Brand} m-auto px-5`} href="/">
+					<NavbarBrand className={`m-auto px-5`} href="/">
 						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
 					</NavbarBrand>
 					{/*Centre le titre quand on passe sur mobile*/}

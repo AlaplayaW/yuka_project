@@ -14,7 +14,7 @@ export default function Footer() {
 		<div>
 			{" "}
 			{/* Footer desktop and mobile */}
-			{/* FOOTER  */}
+			{/* FOOTER DESKTOP */}
 			<div className="d-none d-lg-block">
 				<div
 					className={`container-fluid d-flex justify-content-between mt-auto py-3`}
@@ -47,7 +47,7 @@ export default function Footer() {
 			<div className={`${styles.Mobile} d-lg-none fixed-bottom`}>
 				<div
 					className={`container-fluid mt-auto`}
-					style={{ backgroundColor: "rgb(247, 211, 6)", minHeight: "50px" }}
+					style={{ backgroundColor: "#e6e7e8", minHeight: "50px" }}
 				>
 					<div className="d-flex justify-content-between">
 						<a href="/apropos/" className="py-3" style={{ color: "black" }}>
