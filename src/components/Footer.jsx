@@ -52,13 +52,20 @@ export default function Footer() {
 				>
 					<div className="d-flex justify-content-between">
 						<a href="/apropos/" className="py-3" style={{ color: "black" }}>
+						<Link tag={Link} to="/apropos/" >
 							A propos
+						</Link>
 						</a>
             <Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
 							<img className="" src={Barcode} style={{ width: "50px" }} alt="scan"/>
 						</Badge>
-						<a href="/contact/" className="py-3" style={{ color: "black" }}>
+						{/* <a href="/contact/" className="py-3" style={{ color: "black" }}>
 							Contact
+						</a> */}
+						<a href="/contact/" className="py-3" style={{ color: "black" }}>
+						<Link tag={Link} to="/contact/" >
+							Contact
+						</Link>
 						</a>
 					</div>
 				</div>

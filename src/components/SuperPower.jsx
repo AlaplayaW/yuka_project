@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./SuperPower.module.css";
-import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import {Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 const SuperPower = props => {
 	return (
+		// <Row className="no-gutters">
 		<div className="col-3 mx-2 text-center">
+		{/* //////////probleme de marges*/}
 			<Card
 				className={`${styles.card} bg-transparent mx-3 d-none d-lg-flex`}
 			>
@@ -15,6 +17,8 @@ const SuperPower = props => {
 				</CardBody>
 			</Card>
 		</div>
+		// </Row>
+
 	);
 };
 
