@@ -6,7 +6,7 @@ const SuperPower = props => {
 	return (
 		<div className="col-3 m-2 text-center">
 			<Card
-				className={`${styles.card} ${styles.HvrGrowShadow} mx-0 my-2 d-none d-lg-flex`}
+				className={`${styles.card} ${styles.HvrGrowShadow} mx-0 my-2`}
 			>
 				<CardTitle className={`${styles.cardTitle} pt-3`}>{props.power}</CardTitle>
 				<CardImg

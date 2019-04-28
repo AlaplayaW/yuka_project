@@ -1,9 +1,15 @@
 .container {
   background-color: white;
 }
-.h2 {
+.h2Laptop {
   font-family: "Patrick Hand", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   background-color: #f8751d;
   color: white;
+}
+.h2Mobile {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.3rem !important;
+  background-color: #f8751d !important;
+  width: 100%;
 }

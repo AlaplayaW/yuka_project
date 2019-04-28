@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import SuperPower from "./SuperPower";
 import styles from "./LegendPower.module.css";
 import AccordionPower from "./AccordionPower";
-import { CardDeck } from "reactstrap";
+import { CardDeck, Button, Collapse } from "reactstrap";
 import NoteA from "../images/noteA.png";
 import NoteB from "../images/noteB.png";
 import NoteC from "../images/noteC.png";
@@ -14,7 +14,9 @@ import Unknow from "../images/unknow.png";
 class LegendPower extends Component {
 	constructor(props) {
 		super(props);
+		this.toggle = this.toggle.bind(this);
 		this.state = {
+			collapse: false,
 			power: [
 				{
 					power: "SUPER HERO",
@@ -62,19 +64,25 @@ class LegendPower extends Component {
 		};
 	}
 
+	toggle() {
+		this.setState(state => ({ collapse: !state.collapse }));
+	}
+
 	render() {
 		return (
 			<div className={`${styles.container} pb-5`}>
-				<h2 className={`${styles.h2} p-1 my-0 text-center`}>LES CAPS</h2>
-				<CardDeck className="justify-content-around m-0">
+				<h2 className={`${styles.h2Laptop} p-1 mb-1 text-center d-none d-lg-block`}>LES CAPS</h2>
+				<CardDeck className="d-none d-lg-flex justify-content-around m-0">
 					{this.state.power.map((powerList, index) => {
 						return <SuperPower {...powerList} key={index} />;
 					})}
 				</CardDeck>
-
-				{this.state.power.map((powerAccordion, index) => {
-					return <AccordionPower {...powerAccordion} key={index} />;
-				})}
+				<div className="mb-3">
+					<Button onClick={this.toggle} className={`${styles.h2Mobile} p-1 mb-1 text-center d-block d-lg-none`}>LES CAPS</Button>
+					<Collapse  isOpen={this.state.collapse} >{this.state.power.map((powerAccordion, index) => {
+						return <AccordionPower {...powerAccordion} key={index}/>;
+					})}</Collapse>
+				</div>
 			</div>
 		);
 	}
