@@ -24,19 +24,19 @@ export default function Footer() {
 					<div>
 						<a
 							href="https://www.youtube.com/watch?v=D9rFCgZa9zs"
-							className={`${styles.youtube} ${styles.social}`}
+							className={`${styles.youtube} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faYoutube} size="2x" />
 						</a>
 						<a
 							href="https://www.facebook.com/"
-							className={`${styles.facebook} ${styles.social}`}
+							className={`${styles.facebook} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faFacebook} size="2x" />
 						</a>
 						<a
 							href="https://www.twitter.com/"
-							className={`${styles.twitter} ${styles.social}`}
+							className={`${styles.twitter} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faTwitter} size="2x" />
 						</a>

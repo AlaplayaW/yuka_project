@@ -9,7 +9,7 @@ class History extends Component {
 	render() {
 		return (
 			<div className={styles.bgBlock}>
-				<Row>
+				<Row className="container-fluid">
 					<Col lg="6" className={`${styles.imgSuper}`}>
 						<CardImg src={SuperHero} alt="" />
 					</Col>
