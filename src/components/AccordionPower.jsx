@@ -4,10 +4,13 @@ import {
 	Button,
 	CardImg,
 	Row,
-	Col
+	Col,
+	DropdownToggle,
+	ButtonDropdown,
+	Container,
 } from "reactstrap";
 
-import styles from "./AccordionPower.module.css"
+import styles from "./AccordionPower.module.css";
 
 class AccordionPower extends Component {
 	constructor(props) {
@@ -22,35 +25,30 @@ class AccordionPower extends Component {
 
 	render() {
 		return (
-			<div className=" d-none d-md-block d-sm-block d-block d-lg-none p-4">
-				<Row className="d-flex align-items-center">
-					<Col sm="2">
+			<Container className="d-lg-none d-flex justify-content-center border-bottom">
+				<Row className="align-items-center mx-0">
+					<Col xs="4">
 						<CardImg
 							src={this.props.image}
 							alt="Power"
-							style={{ height: 100, width: 100 }}
-							className={`${styles.image} d-flex m-auto`}
+							className={`${styles.image}`}
 						/>
 					</Col>
-					<Col sm="4">
-						<h5 className="m-3"> {this.props.power} </h5>
+					<Col xs="8" className="d-flex justify-content-center">
+						<ButtonDropdown onClick={this.toggle}>
+							<Button color="transparent" className={`${styles.button} px-0 py-2`}>
+								{this.props.power}
+							</Button>
+							<DropdownToggle color="transparent" className="border px-3">
+								+
+							</DropdownToggle>
+						</ButtonDropdown>
 					</Col>
-					<Col sm="5">
-						<Button
-							color="primary"
-							onClick={this.toggle}
-							className="d-flex m-auto"
-						>
-							Plus d'infos
-						</Button>
-					</Col>
-				</Row>
-				<Row className="m-4">
-					<Collapse isOpen={this.state.collapse} className="m-4">
+					<Collapse isOpen={this.state.collapse} className="m-2">
 						<div>{this.props.description}</div>
 					</Collapse>
 				</Row>
-			</div>
+			</Container>
 		);
 	}
 }
