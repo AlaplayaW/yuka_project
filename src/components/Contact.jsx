@@ -6,11 +6,10 @@ import styles from "./Contact.module.css";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<div className={`${styles.container}`}>
 			<Form className={`p-3 ${styles.Form}`}>
 				<h1 className={styles.ContactTitle}>Contactez-nous</h1>
 				<FormGroup>
-					<Col sm={{size: 10, offset: 1}}>
+					<Col sm={{ size: 10, offset: 1 }}>
 						<Label for="name"> Votre nom </Label>
 						<Input
 							type="name"
@@ -21,7 +20,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<FormGroup>
-					<Col sm={{size: 10, offset: 1}}>
+					<Col sm={{ size: 10, offset: 1 }}>
 						<Label for="exampleEmail"> Email </Label>
 						<Input
 							type="email"
@@ -32,7 +31,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<FormGroup>
-					<Col sm={{size: 10, offset: 1}}>
+					<Col sm={{ size: 10, offset: 1 }}>
 						<Label for="text"> Objet </Label>
 						<Input
 							type="text"
@@ -43,16 +42,15 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<FormGroup>
-					<Col sm={{size: 10, offset: 1}}>
+					<Col sm={{ size: 10, offset: 1 }}>
 						<Label for="message"> Votre message </Label>
 						<Input type="textarea" name="text" id="message" />
 					</Col>
 				</FormGroup>
-				<Col sm={{size: 10, offset: 1}}>
+				<Col sm={{ size: 10, offset: 1 }}>
 					<Button className={`p-3 ${styles.Button}`}> Envoyer </Button>
 				</Col>
 			</Form>
-			</div>
 		);
 	}
 }
