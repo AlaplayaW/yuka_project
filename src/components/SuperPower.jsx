@@ -1,19 +1,25 @@
 import React from "react";
-import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import {Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+
+import styles from "./SuperPower.module.css";
 
 const SuperPower = props => {
 	return (
-		<>
+		<div className="col-3 m-2 text-center">
 			<Card
-				className="bg-transparent mx-1 d-none d-lg-block"
+				className={`${styles.card} ${styles.HvrGrowShadow} mx-0 my-2`}
 			>
-				<CardImg src={props.image} alt="Power" />
-				<CardBody>
-					<CardTitle className="p-1 text-center">{props.power}</CardTitle>
+				<CardTitle className={`${styles.cardTitle} pt-3`}>{props.power}</CardTitle>
+				<CardImg
+					src={props.image}
+					alt="Power"
+					className={`${styles.image} mx-auto`}
+				/>
+				<CardBody className={`${styles.cardText} p-1`}>
 					<CardText>{props.description}</CardText>
 				</CardBody>
 			</Card>
-		</>
+		</div>
 	);
 };
 

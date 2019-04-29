@@ -1,4 +1,5 @@
 import React from "react";
+
 import SearchInput from "../components/SearchInput";
 import SearchButton from "../components/SearchButton";
 import {Redirect} from "react-router-dom";

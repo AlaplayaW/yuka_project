@@ -1,6 +1,5 @@
 import React from "react";
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
-
+import {Collapse, Button, CardBody, Card } from 'reactstrap';
 import styles from "./Collapse.module.css"; 
 
 export default class CollapseFaq extends React.Component{
@@ -21,8 +20,11 @@ collapse: false,
     const {title, description} = this.props;
 
     return (
-      <div style={{textAlign: 'center'}}>
+      // Probleme de marges
+      <div style={{textAlign: 'center'}} className={styles.container}>
+
         <Button color="success" onClick={this.toggle} style={{marginBottom: '0.5rem', width: '70%', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>{this.props.title}</Button>
+
         <Collapse className={styles.center} isOpen={this.state.collapse}>
           <Card style={{border: "white", fontFamily: 'Patrick Hand SC', fontSize: '1.5em', width: '70%'}}>
             <CardBody>
@@ -31,6 +33,7 @@ collapse: false,
           </Card>
         </Collapse>
       </div>
+
     )
   }
 }

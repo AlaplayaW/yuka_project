@@ -3,11 +3,13 @@ import React from "react";
 import Fetch from "../Fetch";
 import Product from "../components/Product";
 import {Redirect} from "react-router-dom";
+import Layout from "../components/Layout"
 
 
 // Le nom du pattern : 'render-props' ---- cf. Inversion de la dépendance >> COMMENT TO KEEP
 export default function ProductPage({ match }) {
 	return (
+		<Layout>
 		<Fetch
 			requestUrl={`https://fr.openfoodfacts.org/api/v0/produit/${
 				match.params.barcode
@@ -37,9 +39,11 @@ export default function ProductPage({ match }) {
 						saturedFatU={product["nutriments"]["saturated-fat_unit"]}
 						saltV={product.nutriments.salt_value}
 						saltU={product.nutriments.salt_unit}
+					
 					/>
 				);
 			}}
 		/>
+		</Layout>
 	);
 }

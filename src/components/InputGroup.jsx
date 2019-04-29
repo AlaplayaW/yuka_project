@@ -2,7 +2,8 @@ import React from "react";
 import SearchInput from "./SearchInput";
 import SearchButton from "./SearchButton";
 import {Redirect} from "react-router-dom";
-import Qapp from "../quagga/App"
+import Quagga from "../quagga/Quagga"
+import styles from "./InputGroup.module.css";
 
 const homePageStyle = {
   display: "flex",
@@ -27,12 +28,17 @@ export default class InputGroup extends React.Component {
     if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
 
     return (
-      <div className="" style={{backgroundColor:"rgb(255, 231, 94)", homePageStyle}}>
+      <div className={`${styles.container}`}>
       
-        <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
-        <SearchButton barcode={inputValue} />
-        <Qapp />
+        <div className={`${styles.inputText}`}>
+          <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
+          <SearchButton barcode={inputValue} />
         </div>
+        <div className={`${styles.scan}`}>
+          <Quagga />
+          </div>
+
+      </div>
     )
     }
   }

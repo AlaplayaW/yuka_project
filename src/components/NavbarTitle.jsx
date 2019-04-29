@@ -1,6 +1,5 @@
 import React from "react";
-
-import styles from "./NavbarTitle.module.css";
+import {Link} from "react-router-dom";
 import {
 	Collapse,
 	Navbar,
@@ -10,6 +9,9 @@ import {
 	NavItem,
 	NavLink
 } from "reactstrap";
+
+import Logo from "../images/logo_yukids1.png";
+import styles from "./NavbarTitle.module.css";
 
 export default class NavbarTitle extends React.Component {
 	constructor(props) {
@@ -26,10 +28,10 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<div className={styles.TopNavBar}>
+			<div>
 				<Navbar expand="lg">
-					<NavbarBrand className={`${styles.Brand} m-auto px-5`} href="/">
-						YuKids
+					<NavbarBrand className={`m-auto`} tag={Link} to="/">
+						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
 					</NavbarBrand>
 					{/*Centre le titre quand on passe sur mobile*/}
 					<NavbarToggler className="d-none" onClick={this.toggle} />
@@ -37,22 +39,22 @@ export default class NavbarTitle extends React.Component {
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink className={styles.Link} href="/">
-									Home{" "}
+								<NavLink className={styles.Link} tag={Link} to="/">
+									Home
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className={styles.Link} href="/contact/">
+								<NavLink className={styles.Link} tag={Link} to="/contact/">
 									Contact
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className={styles.Link} href="/faq/">
-									F.A.Q{" "}
+								<NavLink className={styles.Link} tag={Link} to="/faq/">
+									F.A.Q
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className={styles.Link} href="/apropos/">
+								<NavLink className={styles.Link} tag={Link} to="/apropos/">
 									A propos
 								</NavLink>
 							</NavItem>
