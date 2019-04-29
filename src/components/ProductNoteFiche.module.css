@@ -1,0 +1,33 @@
+.powerName {
+	font-family: "Patrick Hand";
+	text-transform: uppercase;
+	color: black;
+	font-size: 2em;
+	text-align: center;
+}
+
+.cardPowerNote {
+	border: none !important;
+}
+
+.imgNote {
+	animation: imgNote infinite 10s linear;
+}
+
+@keyframes imgNote {
+	from {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(30deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}

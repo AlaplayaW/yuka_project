@@ -1,5 +1,10 @@
+* {
+	border: 1px dotted green;
+}
+
 .Bg {
-	background-image: url(../images/malbouffe.png);
+	/* background-image: url(../images/candy.jpg); */
+	background-color: #9ac455;
 	height: auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -7,11 +12,26 @@
 }
 
 .CardStyle {
+	background-color: rgba(219, 209, 191, 1) !important;
 	border-radius: 20px 20px 20px 20px !important;
 	-moz-border-radius: 20px 20px 20px 20px !important;
 	-webkit-border-radius: 20px 20px 20px 20px !important;
-
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5) !important;
 	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5) !important;
 	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5) !important;
+}
+
+.h2product {
+	font-family: "Quicksand";
+	font-weight: bold;
+}
+
+.brandName {
+	font-family: "Quicksand";
+	font-size: 1.7em;
+	font-weight: lighter;
+}
+
+.infoProduct {
+	border: solid 2px white !important;
 }
