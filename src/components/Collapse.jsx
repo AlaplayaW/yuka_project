@@ -21,7 +21,7 @@ collapse: false,
 
     return (
       // Probleme de marges
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center'}} className={styles.container}>
 
         <Button color="success" onClick={this.toggle} style={{marginBottom: '0.5rem', width: '70%', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>{this.props.title}</Button>
 
