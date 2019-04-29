@@ -11,7 +11,6 @@ import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
 	return (
-		<Layout>
 			<div className={`${styles.bgImg} container-fluid`}>
 				<Row className="d-flex justify-content-center">
 					<p className={styles.titleMemberPage}> LA TEAM YUKIDS </p>
@@ -59,6 +58,5 @@ export default function AboutUs() {
 					</Col>
 				</Row>
 			</div>
-		</Layout>
 	);
 }
