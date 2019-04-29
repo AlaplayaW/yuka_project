@@ -13,11 +13,11 @@ import Barcode from "../images/bar-code.png";
 
 export default function Footer() {
 	return (
-		<div className="">
+		<div className={`${styles.Footer}`}>
 			{/* FOOTER DESKTOP */}
-			<div className="d-none d-lg-block footer">
+			<div className="d-none d-lg-block">
 				<div
-					className={`container-fluid d-flex justify-content-between mt-auto py-3`}
+					className={`container-fluid d-flex justify-content-between mb-0 py-3`}
 					style={{ backgroundColor: "#e6e7e8" }}
 				>
 					<h3 className="p-2 mb-0">@ Cloé, Perrine, Jim, Doc</h3>

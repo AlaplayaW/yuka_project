@@ -2,16 +2,22 @@ import React from 'react';
 
 import NavbarTitle from './NavbarTitle';
 import Footer from './Footer';
-import styles from './Layout.module.css';
+import "./Layout.css";
 
 const Layout = ({children}) => {
   return ( 
-    <div className={styles.Layout}>
-    <NavbarTitle />
-    <div>
-    {children}
-    </div>
-    <Footer />
+    <div className="Layout Site">
+      <div className="Site-Content">
+        <div className="Site-NavBar">
+          <NavbarTitle />
+        </div>
+        <div className="Site-Children">
+          {children}
+        </div>
+      </div>
+      <div className="Site-Footer">
+      <Footer />
+      </div>
     </div>
    );
 }

@@ -28,7 +28,7 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<Navbar expand="lg" className="h-15">
+			<Navbar expand="lg">
 				<NavbarBrand className={`m-auto`} tag={Link} to="/">
 					<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
 				</NavbarBrand>
