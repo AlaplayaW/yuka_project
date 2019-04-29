@@ -3,8 +3,9 @@ import React from "react";
 import SearchInput from "../components/SearchInput";
 import SearchButton from "../components/SearchButton";
 import {Redirect} from "react-router-dom";
+import Layout from "../components/Layout";
 
-import Qapp from "../quagga/App"
+import Quagga from "../quagga/Quagga"
 
 
 export default class Error extends React.Component {
@@ -21,14 +22,15 @@ export default class Error extends React.Component {
   if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
 
   return (
+    <Layout>
     <div style={{textAlign: 'center'}}>
       <p style={{textAlign: 'center', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>OOOPS ! Ce produit n'a pas été trouvé</p>
       <p style={{textAlign: 'center', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>Retente ta chance juste en dessous !</p>
     <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
     <SearchButton barcode={inputValue} />
-    <Qapp />
-
+    <Quagga />
     </div>
+    </Layout>
   )
   }
 }
