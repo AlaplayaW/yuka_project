@@ -13,12 +13,11 @@ import Barcode from "../images/bar-code.png";
 
 export default function Footer() {
 	return (
-		<div className={`${styles.Footer}`}>
+		<div className={`${styles.footer} bg-white`}>
 			{/* FOOTER DESKTOP */}
 			<div className="d-none d-lg-block">
 				<div
 					className={`container-fluid d-flex justify-content-between mb-0 py-3`}
-					style={{ backgroundColor: "#e6e7e8" }}
 				>
 					<h3 className="p-2 mb-0">@ Cloé, Perrine, Jim, Doc</h3>
 					<div>
@@ -32,6 +31,7 @@ export default function Footer() {
 						<a
 							href="https://www.facebook.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 							className={`${styles.facebook} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faFacebook} size="2x" />
@@ -39,6 +39,7 @@ export default function Footer() {
 						<a
 							href="https://www.twitter.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 							className={`${styles.twitter} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faTwitter} size="2x" />

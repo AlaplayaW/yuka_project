@@ -1,7 +1,10 @@
 h3 {
-	font-size: 1rem !important;
+	font-size: 1.3rem !important;
+	font-family: "Patrick Hand SC", cursive;
 }
-
+.footer {
+	border-top:1px solid black;
+}
 .youtube {
 	color: black;
 }
@@ -18,7 +21,6 @@ h3 {
 	font-weight: 600 !important;
 }
 
-/* Grow */
 .HvrGrow {
 	display: inline-block;
 	vertical-align: middle;

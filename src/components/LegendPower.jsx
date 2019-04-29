@@ -70,8 +70,8 @@ class LegendPower extends Component {
 
 	render() {
 		return (
-			<div className={`${styles.container} pb-5`}>
-				<h2 className={`${styles.h2Laptop} p-1 mb-1 text-center d-none d-lg-block`}>LES CAPS</h2>
+			<div className={`${styles.container} pb-3`}>
+				<h2 className={`${styles.h2Laptop} p-1 mb-1 text-center d-none d-lg-block`}>DECOUVRE LES POUVOIRS SECRETS</h2>
 				<CardDeck className="d-none d-lg-flex justify-content-around m-0">
 					{this.state.power.map((powerList, index) => {
 						return <SuperPower {...powerList} key={index} />;

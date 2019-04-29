@@ -4,12 +4,13 @@ import FaqCollapse from "./FaqCollapse";
 
 export default function Faq() {
 	return (
-		<div style={{ backgroundColor: "#fede4f", padding: "20px 0", height: "83vh"}}>
+		<div style={{ backgroundColor: "#fede4f", padding: "20px 0", minHeight: "85vh" }}>
 			<h1
 				style={{
 					textAlign: "center",
 					fontFamily: "Patrick Hand",
-					padding: "10px"
+          padding: "10px",
+          color: "#922D61"
 				}}
 			>
 				Foire Aux Questions

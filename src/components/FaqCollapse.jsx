@@ -19,32 +19,32 @@ export default class FaqCollapse extends React.Component {
 	}
 
 	render() {
-		const { title, description } = this.props;
-
 		return (
 			<div style={{ textAlign: "center" }} className={styles.container}>
 				<Button
-					color="success"
+					className="p-1 m-1 p-md-2 m-md-2"
 					onClick={this.toggle}
 					style={{
-						marginBottom: "0.5rem",
-						width: "70%",
+						width: "80%",
 						fontFamily: "Patrick Hand SC",
-						fontSize: "2em"
+						fontSize: "1.5em",
+						backgroundColor: "#922D61",
+						color: "#FFF"
 					}}
 				>
 					{this.props.title}
 				</Button>
 				<Collapse className={styles.center} isOpen={this.state.collapse}>
 					<Card
+						className="p-1 m-1"
 						style={{
 							border: "white",
 							fontFamily: "Patrick Hand SC",
-							fontSize: "1.5em",
-							width: "70%"
+							fontSize: "1.2em",
+							width: "80%",
 						}}
 					>
-						<CardBody>{this.props.description}</CardBody>
+						<CardBody className="p-1 m-1">{this.props.description}</CardBody>
 					</Card>
 				</Collapse>
 			</div>
