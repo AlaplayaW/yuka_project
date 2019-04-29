@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { Button, Row, Col, CardImg } from "reactstrap";
 import {Link} from "react-router-dom"
+
 import styles from "./History.module.css";
 import SuperHero from "../images/herohomepage.png";
 
-// -------------- COMPONENT WITH REACTSTRAP AND BOOTSTRAP  --------------
+
 class History extends Component {
 	render() {
 		return (
 			<div className={styles.bgBlock}>
-				<Row className="no-gutters">
+				<Row className="mx-0">
 					<Col lg="6" className={`${styles.imgSuper}`}>
 						<CardImg src={SuperHero} alt="" />
 					</Col>
@@ -18,16 +19,15 @@ class History extends Component {
 							Welcome petit !! <br />
 							Devine quoi? Il paraît que les aliments ont des supers pouvoirs!
 							<br />
-							Pour les découvrir, suis les instructions ;)
+							Ils sont cachés dans les codes barres !
 						</p>
 						<Button
 							tag={Link} to="/scan"
 							color="info"
 							className="d-none d-lg-block m-5"
 						>
-							Scan vite le code barre pour les découvrir !
+							Click ici pour accéder au scanner !
 						</Button>
-
 						<div className={`${styles.text} d-lg-none`}>
 							<p>
 								Appuie sur le code barre pour scanner les produits et découvrir
@@ -42,28 +42,3 @@ class History extends Component {
 }
 
 export default History;
-
-//  -------------- COMPONENT WITH CSS GRID --------------
-// class History extends Component {
-// 	render() {
-// 		return (
-// 			<div className={styles.main}>
-// 				<p className={`${styles.title} d-none d-lg-block`}>
-// 					Hey, tu sais quoi? <br /> Il parait que les aliments ont des supers
-// 					pouvoirs! Tu veux les voir?
-// 				</p>
-// 				<Button href="./scan" className={`${styles.notice} d-none d-lg-block`}>
-// 					Scan vite le code barre pour les découvrir !
-// 				</Button>
-// 				<div className={styles.superHero}>
-// 					<img src={SuperHeroRed_phone} alt="" />
-// 				</div>
-// 				<div className={`${styles.noticeMobile} d-lg-none`}>
-// 					<p>Appuie sur le code barre pour scanner les produits !</p>
-// 				</div>
-// 			</div>
-// 		);
-// 	}
-// }
-
-// export default History;
