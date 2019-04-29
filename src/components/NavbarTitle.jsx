@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
 	Collapse,
 	Navbar,
@@ -7,7 +7,8 @@ import {
 	NavbarBrand,
 	Nav,
 	NavItem,
-	NavLink
+	NavLink,
+	Media
 } from "reactstrap";
 
 import Logo from "../images/logo_yukids1.png";
@@ -28,40 +29,36 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				<Navbar expand="lg">
-					<NavbarBrand className={`m-auto`} tag={Link} to="/">
-						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
-					</NavbarBrand>
-					{/*Centre le titre quand on passe sur mobile*/}
-					<NavbarToggler className="d-none" onClick={this.toggle} />
-					{/*Fais disparaitre le toggler quand on passe sur mobile */}
-					<Collapse isOpen={this.state.isOpen} navbar>
-						<Nav className="ml-auto" navbar>
-							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/">
-									Home
-								</NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/contact/">
-									Contact
-								</NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/faq/">
-									F.A.Q
-								</NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/apropos/">
-									A propos
-								</NavLink>
-							</NavItem>
-						</Nav>
-					</Collapse>
-				</Navbar>
-			</div>
+			<Navbar color="white" light expand="lg">
+				<NavbarBrand tag={Link} to="/">
+					<Media object src={Logo} alt="logo yukids" className={styles.imgLogo} />
+				</NavbarBrand>
+				<NavbarToggler onClick={this.toggle} />
+				<Collapse isOpen={this.state.isOpen} navbar>
+					<Nav className="ml-auto" navbar>
+						<NavItem>
+							<NavLink className={styles.Link} tag={Link} to="/">
+								Home
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink className={styles.Link} tag={Link} to="/contact">
+								Contact
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink className={styles.Link} tag={Link} to="/faq">
+								F.A.Q
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink className={styles.Link} tag={Link} to="/apropos">
+								A propos
+							</NavLink>
+						</NavItem>
+					</Nav>
+				</Collapse>
+			</Navbar>
 		);
 	}
 }

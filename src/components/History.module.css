@@ -1,17 +1,6 @@
-/* * {
-	border: 1px dotted green;
-} */
-
-/* -------------- COMPONENT WITH REACTSTRAP AND BOOTSTRAP  -------------- */
-
 .bgBlock {
 	background-color: #fede4f;
-	/* height: 83vh; */
 }
-
-/* .imgSuper {
-	width: auto;
-} */
 
 .notice {
 	font-family: "Patrick Hand", cursive;
@@ -26,92 +15,4 @@
 	text-align: center;
 	font-size: 2rem;
 	color: #86328b;
-	/* background-color: #44a49d;
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px;
-	padding: 5px;
-	align-self: flex-start; */
 }
-
-/* .noticeMobile {
-	font-family: "Patrick Hand", cursive;
-	font-size: 1.5rem;
-	color: darkslategrey;
-	background-color: #44a49d;
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px;
-	padding: 5px;
-	align-self: flex-start;
-} */
-
-/* -------------- COMPONENT WITH CSS GRID -------------- */
-/* 
-@media (max-width: 991px) {
-	.main {
-		display: grid;
-		grid-template-columns: 10px 1fr 10px;
-		grid-template-rows: 10px repeat(2, auto) 10px;
-		grid-gap: 10px;
-		color: darkslategrey;
-		text-align: center;
-		height: 80vh;
-		background-color: #fede4f;
-	}
-	.superHero {
-		grid-column: 2;
-		grid-row: 2/3;
-		align-self: flex-end;
-	}
-	.superHero img {
-		max-width: 80%;
-	}
-
-	.noticeMobile {
-		grid-column: 2;
-		grid-row: 3;
-		font-family: "Patrick Hand", cursive;
-		font-size: 1.5rem;
-		color: darkslategrey;
-		background-color: rgb(233, 233, 233);
-		border-radius: 10px;
-		box-shadow: 2px 2px 2px;
-		padding: 5px;
-		align-self: flex-start;
-	}
-}
-
-@media (min-width: 992px) {
-	.main {
-		display: grid;
-		grid-template-columns: 10px repeat(2, 1fr) 10px;
-		grid-template-rows: 10px repeat(2, auto) 10px;
-		grid-gap: 10px;
-		color: darkslategrey;
-		text-align: center;
-		height: 75vh;
-		background-color: #fede4f;
-	}
-	.superHero {
-		grid-column: 2;
-		grid-row: 2 / 4;
-	}
-	.superHero img {
-		max-height: 80%;
-	}
-	.title {
-		grid-column: 3 / 4;
-		grid-row: 2;
-		font-family: "Patrick Hand SC", cursive;
-		font-size: 2rem;
-		font-weight: bold;
-		align-self: flex-end;
-	}
-	.notice {
-		grid-column: 3 / 4;
-		grid-row: 3;
-		font-family: "Patrick Hand", cursive;
-		font-size: 1.5rem;
-		padding: 5px;
-		align-self: flex-start;
-	}
-} */
