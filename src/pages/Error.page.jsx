@@ -20,8 +20,8 @@ export default class Error extends React.Component {
   if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
 
   return (
-    <div>
-      <p style={{textAlign: 'center', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>OOOPS ! Ce produit n'a pas été trouvé !</p>
+    <div style={{textAlign: 'center'}}>
+      <p style={{textAlign: 'center', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>OOOPS ! Ce produit n'a pas été trouvé</p>
       <p style={{textAlign: 'center', fontFamily: 'Patrick Hand SC', fontSize: '2em'}}>Retente ta chance juste en dessous !</p>
     <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
     <SearchButton barcode={inputValue} />
