@@ -5,8 +5,8 @@ import Jim from "../images/jim.png";
 import JB from "../images/jb.png";
 import Perrine from "../images/perrine.png";
 import Cloe from "../images/cloe.png";
-import styles from "./AboutUs.module.css";
 import Layout from "../components/Layout";
+import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
 	return (

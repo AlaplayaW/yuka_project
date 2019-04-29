@@ -19,7 +19,7 @@ export default function ProductPage({ match }) {
 			renderSuccess={({ product }) => {
 				// redirect if product not found
 				if (product === undefined) {
-					return <Redirect to={`/home`}/>
+					return <Redirect to={`/error`}/>
 				} else
 				return (
 					<Product
