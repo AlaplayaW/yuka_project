@@ -9,8 +9,8 @@ export default function Faq() {
 				style={{
 					textAlign: "center",
 					fontFamily: "Patrick Hand",
-          padding: "10px",
-          color: "#922D61"
+					fontSize: "2rem",
+					color: "#922D61",
 				}}
 			>
 				Foire Aux Questions

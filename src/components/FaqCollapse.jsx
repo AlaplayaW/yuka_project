@@ -27,7 +27,7 @@ export default class FaqCollapse extends React.Component {
 					style={{
 						width: "80%",
 						fontFamily: "Patrick Hand SC",
-						fontSize: "1.5em",
+						fontSize: "1rem",
 						backgroundColor: "#922D61",
 						color: "#FFF"
 					}}

@@ -10,9 +10,16 @@
 	background-color: #44a49d;
 }
 
-.text {
+.textLaptop {
 	font-family: "Patrick Hand", cursive;
 	text-align: center;
 	font-size: 2rem;
+	color: #86328b;
+}
+
+.textMobile {
+	font-family: "Patrick Hand", cursive;
+	text-align: center;
+	font-size: 1.5rem;
 	color: #86328b;
 }

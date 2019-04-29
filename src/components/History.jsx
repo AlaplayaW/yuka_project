@@ -11,11 +11,11 @@ class History extends Component {
 		return (
 			<div className={styles.bgBlock}>
 				<Row className="mx-0">
-					<Col lg="6" className={`${styles.imgSuper}`}>
+					<Col xs= "12" lg="6">
 						<CardImg src={SuperHero} alt="" />
 					</Col>
-					<Col lg="6" className="align-self-center">
-						<p className={`${styles.text} d-none d-lg-block m-5`}>
+					<Col xs="12" lg="6" className="align-self-center">
+						<p className={`${styles.textLaptop} d-none d-lg-block m-5`}>
 							Devine quoi? Les aliments ont des supers pouvoirs... ils sont cachés dans les codes barres !
 							<br/>Utilise le scanner pour les découvrir!
 						</p>
@@ -26,7 +26,7 @@ class History extends Component {
 						>
 							Clique ici pour accéder au scanner !
 						</Button>
-						<div className={`${styles.text} d-lg-none`}>
+						<div className={`${styles.textMobile} d-lg-none`}>
 							<p>
 								Appuie sur le bouton pour scanner le code barre et découvrir
 								leurs pouvoirs cachés!
