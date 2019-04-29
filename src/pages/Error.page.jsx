@@ -32,7 +32,7 @@ export default class Error extends React.Component {
 				color: '#FF6319',
 				fontSize: '1.5em',
 				height: '80vh',
-				backgroundImage: "url('https://cdn.pixabay.com/photo/2017/08/09/18/56/shopping-2615482_1280.jpg')",
+				backgroundImage: "url('https://cdn.pixabay.com/photo/2014/06/18/13/25/cherries-371233_1280.jpg')",
 				backgroundSize: 'cover',
 				}}>
 					<p
@@ -56,7 +56,7 @@ export default class Error extends React.Component {
 					<SearchInput
 						onChange={inputValue => this.setState({ inputValue })}
 						value={inputValue}
-					/>
+						/>
 					<SearchButton barcode={inputValue} />
 					<Quagga />
 				</div>
