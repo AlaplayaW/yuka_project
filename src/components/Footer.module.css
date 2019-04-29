@@ -2,26 +2,20 @@ h3 {
   font-size: 1rem !important;
 }
 
-a.youtube {
+.youtube {
   color: black;
 }
 
-a.facebook {
+.facebook {
   color: black;
 }
 
-a.twitter {
+.twitter {
   color: black;
 }
 
 .Mobile {
   font-weight: 600 !important;
-}
-.Mobile a:hover {
-  text-decoration: none;
-}
-.Mobile a:focus {
-  color: green !important;
 }
 
 /* Grow */

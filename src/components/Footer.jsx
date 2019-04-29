@@ -1,20 +1,19 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Badge } from "reactstrap";
-import Barcode from "../images/bar-code.png";
+import {NavLink, Link} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faYoutube,
 	faFacebook,
 	faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import {Link} from "react-router-dom";
+
+import Barcode from "../images/bar-code.png";
 
 export default function Footer() {
 	return (
 		<div>
-			{" "}
-			{/* Footer desktop and mobile */}
 			{/* FOOTER DESKTOP */}
 			<div className="d-none d-lg-block">
 				<div
@@ -25,18 +24,21 @@ export default function Footer() {
 					<div>
 						<a
 							href="https://www.youtube.com/watch?v=D9rFCgZa9zs"
+							target="_blank"
 							className={`${styles.youtube} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faYoutube} size="2x" />
 						</a>
 						<a
 							href="https://www.facebook.com/"
+							target="_blank"
 							className={`${styles.facebook} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faFacebook} size="2x" />
 						</a>
 						<a
 							href="https://www.twitter.com/"
+							target="_blank"
 							className={`${styles.twitter} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faTwitter} size="2x" />
@@ -51,22 +53,17 @@ export default function Footer() {
 					style={{ backgroundColor: "#e6e7e8", minHeight: "50px" }}
 				>
 					<div className="d-flex justify-content-between">
-						<a href="/apropos/" className="py-3" style={{ color: "black" }}>
-						<Link tag={Link} to="/apropos/" >
+						
+						<NavLink tag={Link} to="/apropos" className="py-3" style={{ color: "black" }}>
 							A propos
-						</Link>
-						</a>
+						</NavLink>
+						
             <Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
 							<img className="" src={Barcode} style={{ width: "50px" }} alt="scan"/>
 						</Badge>
-						{/* <a href="/contact/" className="py-3" style={{ color: "black" }}>
+						<NavLink tag={Link} to="/contact" className="py-3" style={{ color: "black" }}>
 							Contact
-						</a> */}
-						<a href="/contact/" className="py-3" style={{ color: "black" }}>
-						<Link tag={Link} to="/contact/" >
-							Contact
-						</Link>
-						</a>
+						</NavLink>
 					</div>
 				</div>
 			</div>
