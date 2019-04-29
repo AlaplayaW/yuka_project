@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-
 import SuperPower from "./SuperPower";
 import styles from "./LegendPower.module.css";
 import AccordionPower from "./AccordionPower";
-import { CardDeck } from "reactstrap";
+import { Row, CardDeck } from "reactstrap";
 import NoteA from "../images/noteA.png";
 import NoteB from "../images/noteB.png";
 import NoteC from "../images/noteC.png";
@@ -64,20 +63,27 @@ class LegendPower extends Component {
 
 	render() {
 		return (
+
+
 			<div className={`${styles.container}`}>
 				<h1 className={`${styles.h1} p-3 text-center`}>
 					Découvre les supers pouvoirs de tes produits
 				</h1>
-				<CardDeck className="justify-content-center">
+
+				<CardDeck className="justify-content-center no-gutters">
 					{this.state.power.map((powerList, index) => {
+								{/* //////////probleme de marges dans SuperPower*/}
 						return <SuperPower {...powerList} key={index} />;
 					})}
 				</CardDeck>
+
 
 				{this.state.power.map((powerAccordion, index) => {
 					return <AccordionPower {...powerAccordion} key={index} />;
 				})}
 			</div>
+
+
 		);
 	}
 }

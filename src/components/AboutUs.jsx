@@ -6,8 +6,8 @@ import Jim from "../images/jim.png";
 import JB from "../images/jb.png";
 import Perrine from "../images/perrine.png";
 import Cloe from "../images/cloe.png";
-
 import styles from "./Member.module.css";
+import Layout from "../components/Layout"
 
 class AboutUs extends Component {
 	constructor(props) {
@@ -43,6 +43,7 @@ class AboutUs extends Component {
 	}
 	render() {
 		return (
+			<Layout>
 			<div className="container-fluid">
 				<Row className="d-flex justify-content-center m-5">
 					{/* <p className={styles.titleMemberPage}> LA TEAM YUKIDS </p> */}
@@ -90,6 +91,7 @@ class AboutUs extends Component {
 					</Col>
 				</Row>
 			</div>
+			</Layout>
 
 			// {/*
 			// 	<div className="container-fluid">

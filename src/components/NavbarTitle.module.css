@@ -5,6 +5,7 @@
 }
 .Link {
 	color: darkslategrey !important ;
+	text-align: center;
 }
 .Brand {
 	font-family: "Sonsie One", cursive;
@@ -15,4 +16,12 @@
 
 .imgLogo {
 	width: 250px;
+	text-align: center;	
+}
+
+@media screen and (min-width: 1000px) {
+	.imgLogo {
+		width: 250px;
+		margin-left: 20px;
+	}
 }
