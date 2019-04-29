@@ -15,6 +15,7 @@ import NoteC from "../images/noteC.png";
 import NoteD from "../images/noteD.png";
 import NoteE from "../images/noteE.png";
 import Ooops from "../images/Ooops.png";
+import NoteApouvoirFiche from "./NoteApouvoirFiche";
 // import PictoProduct from "./PictoProduct";
 
 export default class Product extends React.Component {
@@ -77,6 +78,7 @@ export default class Product extends React.Component {
 							alt=""
 							style={{ borderRadius: "100%" }}
 						/>
+						<NoteApouvoirFiche />
 					</Row>
 					<Row>
 						<Button
