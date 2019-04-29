@@ -59,6 +59,7 @@ export default function Footer() {
 							A propos
 						</NavLink>
 						
+
             <Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
 							<img className="" src={Barcode} style={{ width: "50px" }} alt="scan"/>
 						</Badge>
