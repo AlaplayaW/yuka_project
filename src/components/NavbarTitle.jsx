@@ -29,7 +29,7 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<Navbar color="white" light expand="lg">
+			<Navbar color="white" light expand="lg" className="border-bottom">
 				<NavbarBrand tag={Link} to="/">
 					<Media object src={Logo} alt="logo yukids" className={styles.imgLogo} />
 				</NavbarBrand>

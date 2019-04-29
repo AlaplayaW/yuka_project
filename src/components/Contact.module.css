@@ -1,17 +1,11 @@
 .Form {
   background-color: #fede4f;
-  text-align: center;
-  height: 85vh;
+  min-height: 84vh;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.5rem;
+  color: #3675B7;
 }
-
-.ContactTitle{
-  text-align: center;
+.h1 {
   font-size: 2rem;
-  margin: 2vh 0;
-  padding: 2vh;
-}
-
-.Button{
-  margin-top: 4vh;
-  margin-bottom: 10vh;
+  text-align: end;
 }

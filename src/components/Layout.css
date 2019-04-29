@@ -8,7 +8,7 @@
   width: 100%;
 }
 .Site-NavBar {
-  min-height: auto;
+  min-height: 9vh;
 }
 .Site-Footer {
   height: 7vh;

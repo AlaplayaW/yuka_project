@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Badge } from "reactstrap";
-import {NavLink, Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faYoutube,
@@ -13,17 +13,16 @@ import Barcode from "../images/bar-code.png";
 
 export default function Footer() {
 	return (
-		<div className={`${styles.footer} bg-white`}>
+		<div className={`bg-white`}>
 			{/* FOOTER DESKTOP */}
-			<div className="d-none d-lg-block">
-				<div
-					className={`container-fluid d-flex justify-content-between mb-0 py-3`}
-				>
-					<h3 className="p-2 mb-0">@ Cloé, Perrine, Jim, Doc</h3>
+			<div className={`d-none d-lg-block border-top`}>
+				<div className={`d-flex justify-content-between py-3`}>
+					<h3 className="p-2">@ Cloé, Perrine, Jim, Doc</h3>
 					<div>
 						<a
 							href="https://www.youtube.com/watch?v=D9rFCgZa9zs"
 							target="_blank"
+							rel="noopener noreferrer"
 							className={`${styles.youtube} ${styles.HvrGrow}`}
 						>
 							<FontAwesomeIcon icon={faYoutube} size="2x" />
@@ -48,25 +47,37 @@ export default function Footer() {
 				</div>
 			</div>
 			{/* FOOTER MOBILE */}
-			<div className={`${styles.Mobile} d-lg-none fixed-bottom`}>
-				<div
-					className={`container-fluid mt-auto`}
-					style={{ backgroundColor: "#e6e7e8", minHeight: "50px" }}
-				>
-					<div className="d-flex justify-content-between">
-						
-						<NavLink tag={Link} to="/apropos" className="py-3" style={{ color: "black" }}>
-							A propos
-						</NavLink>
-						
+			<div
+				className={`${
+					styles.Mobile
+				} d-lg-none fixed-bottom bg-white border-top`}
+			>
+				<div className="d-flex justify-content-between">
+					<NavLink
+						tag={Link}
+						to="/apropos"
+						className="py-3"
+						style={{ color: "black" }}
+					>
+						A propos
+					</NavLink>
 
-            <Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
-							<img className="" src={Barcode} style={{ width: "50px" }} alt="scan"/>
-						</Badge>
-						<NavLink tag={Link} to="/contact" className="py-3" style={{ color: "black" }}>
-							Contact
-						</NavLink>
-					</div>
+					<Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
+						<img
+							className=""
+							src={Barcode}
+							style={{ width: "50px" }}
+							alt="scan"
+						/>
+					</Badge>
+					<NavLink
+						tag={Link}
+						to="/contact"
+						className="py-3"
+						style={{ color: "black" }}
+					>
+						Contact
+					</NavLink>
 				</div>
 			</div>
 		</div>
