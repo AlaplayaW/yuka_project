@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CollapseFaq from './Collapse';
 
 export default function Faq() {
   return(
     <div>
+            		{/* //////////probleme de marges dans Collapse*/}
       <CollapseFaq 
       title = "Comment scanner ?" 
       description = "Demande à Google"
@@ -36,6 +37,6 @@ export default function Faq() {
       title = "Pourquoi faut-il s’inscrire pour utiliser Yuka ?" 
       description = "Pour pouvoir revendre vos données"
       /> 
-    </div>
+      </div>
   )
 }

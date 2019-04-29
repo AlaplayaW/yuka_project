@@ -1,6 +1,7 @@
 import React from "react";
+import {Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+
 import styles from "./SuperPower.module.css";
-import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 const SuperPower = props => {
 	return (

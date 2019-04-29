@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Scanner from './Scanner';
 import {Redirect} from "react-router-dom";
+import './Quagga.css'
 
 
-class App extends Component {
+class Quagga extends Component {
 constructor(props){
   super(props);
   this.state = {
@@ -66,7 +67,9 @@ constructor(props){
 
     return (
       <div>
-          <button onClick={this._scan}>{this.state.scanning ? 'Stop' : 'Start'}</button>
+          <button onClick={this._scan} className="button"> 
+          {this.state.scanning ? 'Stop' : 'Scan' }
+          </button>
           {this.state.scanning ? <Scanner onDetected={this._onDetected}/> : null}
       </div>
     )
@@ -78,4 +81,4 @@ constructor(props){
   }
 }
 
-export default App;
+export default Quagga;

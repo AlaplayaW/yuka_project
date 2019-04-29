@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  background-color:#FEDE4F;
+  height: 85vh;
+  /* background-color:rgb(255, 231, 94) */
+}
+
+.inputText{
+margin-bottom: 2vh;
+padding-top: 2vh;
+}
+
+.scan{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding-bottom: 2vh;
+}

@@ -1,15 +1,15 @@
 import React, { Component } from "react";
+import { CardDeck, Button, Collapse } from "reactstrap";
 
 import SuperPower from "./SuperPower";
-import styles from "./LegendPower.module.css";
 import AccordionPower from "./AccordionPower";
-import { CardDeck, Button, Collapse } from "reactstrap";
 import NoteA from "../images/noteA.png";
 import NoteB from "../images/noteB.png";
 import NoteC from "../images/noteC.png";
 import NoteD from "../images/noteD.png";
 import NoteE from "../images/noteE.png";
 import Unknow from "../images/unknow.png";
+import styles from "./LegendPower.module.css";
 
 class LegendPower extends Component {
 	constructor(props) {
