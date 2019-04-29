@@ -22,7 +22,7 @@ class Router extends Component {
 						<Route path="/apropos" component={AboutusPage} />
 						<Route path="/FAQ" component={FAQPage} />
 						<Route path="/scan" component={ScanPage} />
-						<Route component={Error} />
+						<Route path="/error" component={Error} />
 					</Switch>
 				</div>
 			</BrowserRouter>
