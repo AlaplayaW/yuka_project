@@ -25,7 +25,7 @@ export default class InputGroup extends React.Component {
 
   render() {
       const { inputValue, barCode } = this.state;
-    if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
+    if (barCode) {return <Redirect to={`/product/${barCode}`}/>} {
 
     return (
       <div className={`${styles.container}`}>
@@ -42,4 +42,4 @@ export default class InputGroup extends React.Component {
     )
     }
   }
-
+}
