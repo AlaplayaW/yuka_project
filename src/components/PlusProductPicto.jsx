@@ -7,6 +7,8 @@ import MadeInFrance from "../images/MadeInFrance.png";
 import MadeInFranceOmbre from "../images/MadeInFrance_ombre.png";
 import SansHuilePalme from "../images/SansHuilePalme.png";
 import SansHuilePalmeOmbre from "../images/SansHuilePalme_ombre.png";
+import SansGluten from "../images/SansGluten.png";
+import SansGlutenOmbre from "../images/SansGlutenOmbre.png";
 
 // ------------------------ VERSION DÉMO SANS ALGO ------------------------
 // export default function PlusProductPicto() {
@@ -60,6 +62,15 @@ export default class PlusProductPicto extends React.Component {
 			return SansHuilePalmeOmbre;
 		}
 	}
+	algoGluten() {
+		const gluten = this.props.labels;
+		if (gluten.includes("en:gluten-free")) {
+			return SansGluten;
+		} else {
+			return SansGlutenOmbre;
+		}
+	}
+
 	render() {
 		return (
 			<Row className="m-auto pt-5">
@@ -74,6 +85,9 @@ export default class PlusProductPicto extends React.Component {
 						src={this.algoPalme()}
 						alt="Ne contient pas d'huile de palme"
 					/>
+				</Col>
+				<Col>
+					<CardImg src={this.algoGluten()} alt="Sans gluten" />
 				</Col>
 			</Row>
 		);

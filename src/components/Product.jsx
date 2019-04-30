@@ -15,9 +15,7 @@ import ProductNoteFicheC from "./ProductNoteFicheC";
 import ProductNoteFicheD from "./ProductNoteFicheD";
 import ProductNoteFicheE from "./ProductNoteFicheE";
 import ProductNoteFicheOoops from "./ProductNoteFicheOoops";
-import Ooops from "../images/Ooops.png";
 import PlusProductPicto from "./PlusProductPicto";
-// import PictoProduct from "./PictoProduct";
 
 export default class Product extends React.Component {
 	constructor(props) {
