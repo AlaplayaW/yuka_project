@@ -33,7 +33,7 @@ render() {
 			color: '#FF6319',
 			fontSize: '1.5em',
 			height: '80vh',
-			backgroundImage: "url('https://www.enekia.com/wp-content/uploads/2016/05/Logo-1.jpg')",
+			backgroundColor: '#FEDE4F',
 			backgroundSize: 'cover',
 			}}>
 				<p
