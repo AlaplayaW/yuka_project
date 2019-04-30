@@ -29,7 +29,7 @@ export default class InputGroup extends React.Component {
 
     return (
       <div className={`${styles.container}`}>
-      
+
         <div className={`${styles.inputText}`}>
           <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
           <SearchButton barcode={inputValue} />

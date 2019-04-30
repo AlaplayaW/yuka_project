@@ -3,8 +3,9 @@ import Scanner from "./Scanner";
 import { Redirect } from "react-router-dom";
 import "./Quagga.css";
 import { Progress } from "reactstrap";
+import Quagga from "quagga";
 
-class Quagga extends Component {
+class QuaggaApp extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -75,41 +76,46 @@ class Quagga extends Component {
 	render() {
 		// Product page redirection when bestBarcode() returns the most occuring barcode
 		const barCode = this.state.bestResult;
+		if (this.state.bestResult) {
+			Quagga.stop();
+		}
 
 		return barCode === null ? (
 			<>
-				<div className="container-fluid border8">
-					<div className="row">
-
-												{/* <button onClick={this._scan} className="button"> 
+				{/* <button onClick={this._scan} className="button"> 
   {this.state.scanning ? 'Stop' : 'Scan' }
   </button> */}
-							{this.state.scanning ? (
-								<Scanner onDetected={this._onDetected} />
-							) : null}
-
-							
-						<div className="col-4 offset-4 border8 progressBar m-auto">
-						
-								<Progress multi>
-									<Progress
-										bar
-										animated
-										color={this.progressBarColor(
-											this.state.numberOfScans,
-											this.state.scanFrequency
-										)}
-										value={this.state.numberOfScans * 5}
-									>
-										{" "}
-										{this.state.numberOfScans}{" "}
-									</Progress>
-								</Progress>
-					
-
+				{this.state.scanning ? (
+					<>
+						<div className="container-fluid border8">
+							<div className="row">
+								<div className="col-12  border8 progressBar m-auto">
+									<Scanner onDetected={this._onDetected} />
+								</div>
+							</div>
 						</div>
+					</>
+				) : null}
+				
+				{this.state.numberOfScans > 0 ? (
+				<div className="row">
+					<div className="col-10 offset-1 border8 progressBar m-auto">
+						<Progress multi>
+							<Progress
+								bar
+								color={this.progressBarColor(
+									this.state.numberOfScans,
+									this.state.scanFrequency
+								)}
+								value={this.state.numberOfScans * 5}
+							>
+								{" "}
+								{this.state.numberOfScans}{" "}
+							</Progress>
+						</Progress>
 					</div>
 				</div>
+			) : null}
 			</>
 		) : (
 			<Redirect to={`/product/${barCode}`} />
@@ -117,4 +123,4 @@ class Quagga extends Component {
 	}
 }
 
-export default Quagga;
+export default QuaggaApp;
