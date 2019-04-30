@@ -33,29 +33,29 @@ export default class NavbarTitle extends React.Component {
 
 			<div>
 				<Navbar expand="lg" light>
-					<NavbarBrand onClick={Quagga.stop} className={`m-auto`} tag={Link} to="/">
+					<NavbarBrand className={`m-auto`} tag={Link} to="/">
 						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
 					</NavbarBrand>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/">
+								<NavLink className={styles.Link} tag={Link} to="/">
 									Home
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/contact/">
+								<NavLink className={styles.Link} tag={Link} to="/contact/">
 									Contact
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/faq/">
+								<NavLink className={styles.Link} tag={Link} to="/faq/">
 									F.A.Q
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/apropos/">
+								<NavLink className={styles.Link} tag={Link} to="/apropos/">
 									A propos
 								</NavLink>
 							</NavItem>

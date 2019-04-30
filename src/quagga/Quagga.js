@@ -75,6 +75,10 @@ class QuaggaApp extends Component {
 		this._scan();
 	}
 
+	componentWillUnmount(){
+		Quagga.stop()
+	}
+
 	render() {
 // Product page redirection when bestBarcode() returns the most occuring barcode
 		const barCode = this.state.bestResult;
