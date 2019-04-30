@@ -84,20 +84,10 @@ class QuaggaApp extends Component {
 			<>
 				{/* <button onClick={this._scan} className="button"> 
   {this.state.scanning ? 'Stop' : 'Scan' }
-  </button> */}
-				{this.state.scanning ? (
-					<>
-						<div className="container-fluid border8">
-							<div className="row">
-								<div className="col-12  border8 progressBar m-auto">
-									<Scanner onDetected={this._onDetected} />
-								</div>
-							</div>
-						</div>
-					</>
-				) : null}
-				
-				{this.state.numberOfScans > 0 ? (
+	</button> */}
+	<div className="container-fluid border8">
+
+	{this.state.numberOfScans > 0 ? (
 				<div className="row">
 					<div className="col-10 offset-1 border8 progressBar m-auto">
 						<Progress multi>
@@ -116,6 +106,20 @@ class QuaggaApp extends Component {
 					</div>
 				</div>
 			) : null}
+
+				{this.state.scanning ? (
+					<>
+						
+							<div className="row">
+								<div className="col-12  border8 progressBar m-auto">
+									<Scanner onDetected={this._onDetected} />
+								</div>
+							</div>
+						
+					</>
+				) : null}
+				
+				</div>
 			</>
 		) : (
 			<Redirect to={`/product/${barCode}`} />

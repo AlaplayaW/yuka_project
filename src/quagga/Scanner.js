@@ -28,7 +28,7 @@ class Scanner extends Component {
             readers : [ "ean_reader"]
         },
         // Adjust scan frequency depending on user's CPU cores number
-        frequency: ((navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 1) * 4),
+        frequency: ((navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 1) * 2),
         locate: true
     }, function(err) {
         if (err) {
