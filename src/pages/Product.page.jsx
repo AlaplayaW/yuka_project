@@ -39,7 +39,7 @@ export default function ProductPage({ match }) {
 								saltV={product.nutriments.salt_value}
 								saltU={product.nutriments.salt_unit}
 								// tests pour les pictos sauveur de tortue etc. penser à supprimer si fonctionne pas
-								labels={product.labels_tags}
+								labels={product.labels}
 							/>
 						);
 				}}
