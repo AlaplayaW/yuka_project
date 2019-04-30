@@ -32,9 +32,6 @@ render() {
 			textShadow: "3px 3px 3px black",
 			color: '#FF6319',
 			fontSize: '1.5em',
-			height: '80vh',
-			backgroundImage: "url('https://www.enekia.com/wp-content/uploads/2016/05/Logo-1.jpg')",
-			backgroundSize: 'cover',
 			}}>
 				<p
 					style={{
