@@ -1,6 +1,6 @@
-* {
+/* * {
 	border: 1px dotted green;
-}
+} */
 
 .Bg {
 	/* background-image: url(../images/candy.jpg); */
@@ -12,7 +12,7 @@
 }
 
 .CardStyle {
-	background-color: rgba(219, 209, 191, 1) !important;
+	background-color: white !important;
 	border-radius: 20px 20px 20px 20px !important;
 	-moz-border-radius: 20px 20px 20px 20px !important;
 	-webkit-border-radius: 20px 20px 20px 20px !important;
@@ -33,5 +33,12 @@
 }
 
 .infoProduct {
-	border: solid 2px white !important;
+	/* box-shadow: 10px 5px 5px red; */
+	box-shadow: 12px 12px 2px 3px rgba(154, 196, 85, 0.2);
+	border: solid 5px #9ac455 !important;
+}
+
+.buttonInfos {
+	background-color: #fede4f !important;
+	border-color: #fede4f !important;
 }

@@ -9,12 +9,8 @@ export default function NoteApouvoirFiche() {
 	return (
 		<div>
 			<Card className={styles.cardPowerNote}>
-				<CardImg
-					className={styles.imgNote}
-					src={NoteA}
-					alt="Super méga pouvoir"
-				/>
-				<p className={styles.powerName}> Super méga pouvoir </p>
+				<CardImg className={styles.imgNote} src={NoteA} alt="SUPER HÉRO" />
+				<p className={styles.powerName}> SUPER HÉRO </p>
 			</Card>
 		</div>
 	);

@@ -25,9 +25,6 @@ export default class Product extends React.Component {
 		this.state = { collapse: false };
 	}
 
-	// ---------------------------- ALGO POUR AFFICHER PICTO + NOM DU POUVOIR + DETAIL ----------------------------
-	// A VOIR SI ON CONSERVE
-
 	nutriScorePicture() {
 		const nutriscore = this.props.nutriscore;
 		if (nutriscore === "a") {
@@ -81,16 +78,13 @@ export default class Product extends React.Component {
 					</Row>
 					<Row className="m-md-5 bg-white">
 						<Col lg={{ size: 4, offset: 4 }}>{this.nutriScorePicture()}</Col>
-					</Row>
-					<Row className="m-md-5 bg-white">
-						{/* EMPLACEMENT POUR LES P'TITS PLUS : MADE IN FRANCE / BIO / SANS HUILE DE PALME */}
-
 						<PlusProductPicto />
 					</Row>
 					<Row>
 						<Col className="m-2 m-md-5 p-1">
 							<Button
-								color="success"
+								className={styles.buttonInfos}
+								// color="success"
 								onClick={this.toggle}
 								size="lg"
 								style={{ marginBottom: "1rem" }}

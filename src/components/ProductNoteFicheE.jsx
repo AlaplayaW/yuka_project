@@ -12,9 +12,9 @@ export default function NoteApouvoirFiche() {
 				<CardImg
 					className={styles.imgNote}
 					src={NoteE}
-					alt="Super méga pouvoir"
+					alt="POUVOIR MALÉFIQUE"
 				/>
-				<p className={styles.powerName}> Super méga pouvoir </p>
+				<p className={styles.powerName}> POUVOIR MALÉFIQUE </p>
 			</Card>
 		</div>
 	);

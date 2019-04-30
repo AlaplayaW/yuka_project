@@ -12,9 +12,9 @@ export default function NoteApouvoirFiche() {
 				<CardImg
 					className={styles.imgNote}
 					src={NoteC}
-					alt="Super méga pouvoir"
+					alt="POUVOIR FORCE JAUNE"
 				/>
-				<p className={styles.powerName}> Super méga pouvoir </p>
+				<p className={styles.powerName}> POUVOIR FORCE JAUNE </p>
 			</Card>
 		</div>
 	);
