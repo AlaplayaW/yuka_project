@@ -5,12 +5,6 @@ import {Redirect} from "react-router-dom";
 import Quagga from "../quagga/Quagga"
 import styles from "./InputGroup.module.css";
 
-const homePageStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "10vh",
-};
 
 export default class InputGroup extends React.Component {
   constructor(props) {

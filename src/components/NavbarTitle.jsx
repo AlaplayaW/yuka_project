@@ -9,6 +9,7 @@ import {
 	NavItem,
 	NavLink
 } from "reactstrap";
+import Quagga from "quagga";
 
 import Logo from "../images/logo_yukids1.png";
 import styles from "./NavbarTitle.module.css";
@@ -30,7 +31,7 @@ export default class NavbarTitle extends React.Component {
 		return (
 			<div>
 				<Navbar expand="lg">
-					<NavbarBrand className={`m-auto`} tag={Link} to="/">
+					<NavbarBrand onClick={Quagga.stop} className={`m-auto`} tag={Link} to="/">
 						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
 					</NavbarBrand>
 					{/*Centre le titre quand on passe sur mobile*/}
@@ -39,22 +40,22 @@ export default class NavbarTitle extends React.Component {
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/">
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/">
 									Home
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/contact/">
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/contact/">
 									Contact
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/faq/">
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/faq/">
 									F.A.Q
 								</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className={styles.Link} tag={Link} to="/apropos/">
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/apropos/">
 									A propos
 								</NavLink>
 							</NavItem>

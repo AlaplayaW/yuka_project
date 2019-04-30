@@ -74,7 +74,7 @@ class QuaggaApp extends Component {
 	}
 
 	render() {
-		// Product page redirection when bestBarcode() returns the most occuring barcode
+// Product page redirection when bestBarcode() returns the most occuring barcode
 		const barCode = this.state.bestResult;
 		if (this.state.bestResult) {
 			Quagga.stop();
@@ -85,33 +85,13 @@ class QuaggaApp extends Component {
 				{/* <button onClick={this._scan} className="button"> 
   {this.state.scanning ? 'Stop' : 'Scan' }
 	</button> */}
-	<div className="container-fluid border8">
-
-	{this.state.numberOfScans > 0 ? (
-				<div className="row">
-					<div className="col-10 offset-1 border8 progressBar m-auto">
-						<Progress multi>
-							<Progress
-								bar
-								color={this.progressBarColor(
-									this.state.numberOfScans,
-									this.state.scanFrequency
-								)}
-								value={this.state.numberOfScans * 5}
-							>
-								{" "}
-								{this.state.numberOfScans}{" "}
-							</Progress>
-						</Progress>
-					</div>
-				</div>
-			) : null}
+	<div className="container-fluid quagga">
 
 				{this.state.scanning ? (
 					<>
 						
 							<div className="row">
-								<div className="col-12  border8 progressBar m-auto">
+								<div className="col-12 border8">
 									<Scanner onDetected={this._onDetected} />
 								</div>
 							</div>
@@ -119,6 +99,27 @@ class QuaggaApp extends Component {
 					</>
 				) : null}
 				
+{/* ProgressBar */}
+{this.state.numberOfScans > 0 ? (
+	<div className="row">
+		<div className="col-8 offset-2 progressBar">
+			<Progress multi>
+				<Progress
+					bar
+					color={this.progressBarColor(
+						this.state.numberOfScans,
+						this.state.scanFrequency
+					)}
+					value={this.state.numberOfScans * 5}
+				>
+					{" "}
+					{this.state.numberOfScans}{" "}
+				</Progress>
+			</Progress>
+		</div>
+	</div>
+) : null}
+
 				</div>
 			</>
 		) : (
