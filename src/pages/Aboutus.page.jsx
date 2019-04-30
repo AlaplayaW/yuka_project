@@ -8,6 +8,7 @@ const AboutusPage = () => {
 			<AboutUs />
 		</Layout>
 	);
+
 };
 
 export default AboutusPage;

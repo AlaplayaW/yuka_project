@@ -9,6 +9,7 @@ import Layout from "../components/Layout";
 export default function ProductPage({ match }) {
 	return (
 		<Layout>
+
 			<Fetch
 				requestUrl={`https://fr.openfoodfacts.org/api/v0/produit/${
 					match.params.barcode
