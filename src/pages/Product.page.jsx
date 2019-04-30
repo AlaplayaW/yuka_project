@@ -38,8 +38,7 @@ export default function ProductPage({ match }) {
 								saturedFatU={product["nutriments"]["saturated-fat_unit"]}
 								saltV={product.nutriments.salt_value}
 								saltU={product.nutriments.salt_unit}
-								// tests pour les pictos sauveur de tortue etc. penser à supprimer si fonctionne pas
-								labels={product.labels}
+								labels={product.labels_tags}
 							/>
 						);
 				}}
