@@ -80,6 +80,15 @@ class Quagga extends Component {
 			<>
 				<div className="container-fluid border8">
 					<div className="row">
+
+												{/* <button onClick={this._scan} className="button"> 
+  {this.state.scanning ? 'Stop' : 'Scan' }
+  </button> */}
+							{this.state.scanning ? (
+								<Scanner onDetected={this._onDetected} />
+							) : null}
+
+							
 						<div className="col-4 offset-4 border8 progressBar m-auto">
 						
 								<Progress multi>
@@ -97,12 +106,7 @@ class Quagga extends Component {
 									</Progress>
 								</Progress>
 					
-							{/* <button onClick={this._scan} className="button"> 
-  {this.state.scanning ? 'Stop' : 'Scan' }
-  </button> */}
-							{this.state.scanning ? (
-								<Scanner onDetected={this._onDetected} />
-							) : null}
+
 						</div>
 					</div>
 				</div>
