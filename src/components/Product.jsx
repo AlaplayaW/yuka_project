@@ -84,7 +84,8 @@ export default class Product extends React.Component {
 					<Row>
 						<Col className="m-2 m-md-5 p-1">
 							<Button
-								className={styles.buttonInfos}
+								// className={styles.buttonInfos}
+								color="warning"
 								onClick={this.toggle}
 								size="lg"
 								style={{ marginBottom: "1rem" }}

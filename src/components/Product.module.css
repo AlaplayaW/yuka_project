@@ -37,8 +37,8 @@
 	box-shadow: 12px 12px 2px 3px rgba(154, 196, 85, 0.2);
 	border: solid 5px #9ac455 !important;
 }
-
-.buttonInfos {
+/* A CONSERVER SI ON VEUT CHANGER LA COULEUR DU BOUTON HORS COULEUR REACTSTRAP A SUPPR SINON */
+/* .buttonInfos {
 	background-color: #fede4f !important;
 	border-color: #fede4f !important;
-}
+} */
