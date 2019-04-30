@@ -78,7 +78,7 @@ export default class Product extends React.Component {
 					</Row>
 					<Row className="m-md-5 bg-white">
 						<Col lg={{ size: 4, offset: 4 }}>{this.nutriScorePicture()}</Col>
-						<PlusProductPicto />
+						<PlusProductPicto labels={this.props.labels}/>
 					</Row>
 					<Row>
 						<Col className="m-2 m-md-5 p-1">

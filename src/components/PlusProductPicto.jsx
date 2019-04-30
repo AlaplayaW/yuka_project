@@ -67,7 +67,7 @@ export default class PlusProductPicto extends React.Component {
 					<CardImg src={this.algoBio()} alt="produit bio" />
 				</Col>
 				<Col>
-					<CardImg src={this.algoFrance()} alt="Fabriqué en France" />
+					<CardImg src={this.algoMade()} alt="Fabriqué en France" />
 				</Col>
 				<Col>
 					<CardImg
