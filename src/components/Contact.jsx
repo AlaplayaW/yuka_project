@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<Form className={`${styles.Form} py-4 p-lg-4 d-flex flex-column justify-content-center`}>
+			<Form className={`${styles.Form} d-flex flex-column justify-content-center`}>
 				<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }} className={`${styles.h1}`}>Contactez-nous</Col>
 				<FormGroup className="mb-1">
 					<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
@@ -48,7 +48,7 @@ export default class Contact extends React.Component {
 					</Col>
 				</FormGroup>
 				<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
-					<Button className="m-3"> Envoyer </Button>
+					<Button className="mt-2"> Envoyer </Button>
 				</Col>
 			</Form>
 		);

@@ -16,9 +16,9 @@ export default function Footer() {
 		<div className={`bg-white`}>
 			{/* FOOTER DESKTOP */}
 			<div className={`d-none d-lg-block border-top`}>
-				<div className={`d-flex justify-content-between py-3`}>
+				<div className={`d-flex justify-content-between px-3`}>
 					<h3 className="p-2">@ Cloé, Perrine, Jim, Doc</h3>
-					<div>
+					<div className="d-flex align-items-center">
 						<a
 							href="https://www.youtube.com/watch?v=D9rFCgZa9zs"
 							target="_blank"
