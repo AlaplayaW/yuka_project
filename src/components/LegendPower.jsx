@@ -71,17 +71,17 @@ class LegendPower extends Component {
 	render() {
 		return (
 			<div className={`${styles.container} pb-3`}>
-				<h2 className={`${styles.h2Laptop} p-1 mb-1 text-center d-none d-lg-block`}>DECOUVRE LES POUVOIRS SECRETS</h2>
+				<h2 className={`${styles.h2Laptop} p-1 mb-1 text-center d-none d-lg-block`}>LES POUVOIRS SECRETS</h2>
 				<CardDeck className="d-none d-lg-flex justify-content-around m-0">
 					{this.state.power.map((powerList, index) => {
 						return <SuperPower {...powerList} key={index} />;
 					})}
 				</CardDeck>
-				<div className="mb-3">
-					<Button onClick={this.toggle} className={`${styles.h2Mobile} p-1 mb-1 text-center d-block d-lg-none`}>LES CAPS</Button>
-					<Collapse  isOpen={this.state.collapse} >{this.state.power.map((powerAccordion, index) => {
+				<div className="mb-2">
+					<h2 className={`${styles.h2Mobile} p-2 text-center d-block d-lg-none`}>LES POUVOIRS SECRETS</h2>
+						{this.state.power.map((powerAccordion, index) => {
 						return <AccordionPower {...powerAccordion} key={index}/>;
-					})}</Collapse>
+					})}
 				</div>
 			</div>
 		);

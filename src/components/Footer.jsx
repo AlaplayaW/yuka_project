@@ -53,16 +53,16 @@ export default function Footer() {
 				} d-lg-none fixed-bottom bg-white border-top`}
 			>
 				<div className="d-flex justify-content-around">
-					<NavLink
+					{/* <NavLink
 						tag={Link}
 						to="/apropos"
 						className="py-3"
 						style={{ color: "black" }}
 					>
 						A propos
-					</NavLink>
+					</NavLink> */}
 
-					<Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
+					<Badge tag={Link} to="/scan" color="#495057" pill className={`p-1`}>
 						<img
 							className=""
 							src={Barcode}
@@ -70,14 +70,14 @@ export default function Footer() {
 							alt="scan"
 						/>
 					</Badge>
-					<NavLink
+					{/* <NavLink
 						tag={Link}
 						to="/contact"
 						className="py-3"
 						style={{ color: "black" }}
 					>
 						Contact
-					</NavLink>
+					</NavLink> */}
 				</div>
 			</div>
 		</div>

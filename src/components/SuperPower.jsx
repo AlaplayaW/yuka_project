@@ -5,7 +5,7 @@ import styles from "./SuperPower.module.css";
 
 const SuperPower = props => {
 	return (
-		<div className="col-3 m-2 text-center">
+		<div className="col-3 mx-2 text-center">
 			<Card
 				className={`${styles.card} ${styles.HvrGrowShadow} mx-0 my-2`}
 			>
