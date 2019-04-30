@@ -10,6 +10,7 @@ import {
 	NavLink,
 	Media
 } from "reactstrap";
+import Quagga from "quagga";
 
 import Logo from "../images/logo_yukids1.png";
 import styles from "./NavbarTitle.module.css";
@@ -29,36 +30,42 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<Navbar light expand="lg" className="border-bottom">
-				<NavbarBrand tag={Link} to="/">
-					<Media object src={Logo} alt="logo yukids" className={`${styles.imgLogo} pl-3`} />
-				</NavbarBrand>
-				<NavbarToggler onClick={this.toggle} className="border-none"/>
-				<Collapse isOpen={this.state.isOpen} navbar>
-					<Nav className="ml-auto" navbar>
-						<NavItem>
-							<NavLink className={styles.Link} tag={Link} to="/">
-								Home
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink className={styles.Link} tag={Link} to="/contact">
-								Contact
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink className={styles.Link} tag={Link} to="/faq">
-								F.A.Q
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink className={styles.Link} tag={Link} to="/apropos">
-								A propos
-							</NavLink>
-						</NavItem>
-					</Nav>
-				</Collapse>
-			</Navbar>
+
+			<div>
+				<Navbar expand="lg">
+					<NavbarBrand onClick={Quagga.stop} className={`m-auto`} tag={Link} to="/">
+						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
+					</NavbarBrand>
+					{/*Centre le titre quand on passe sur mobile*/}
+					<NavbarToggler className="d-none" onClick={this.toggle} />
+					{/*Fais disparaitre le toggler quand on passe sur mobile */}
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav className="ml-auto" navbar>
+							<NavItem>
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/">
+									Home
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/contact/">
+									Contact
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/faq/">
+									F.A.Q
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink onClick={Quagga.stop} className={styles.Link} tag={Link} to="/apropos/">
+									A propos
+								</NavLink>
+							</NavItem>
+						</Nav>
+					</Collapse>
+				</Navbar>
+			</div>
+
 		);
 	}
 }
