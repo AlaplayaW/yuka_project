@@ -27,6 +27,7 @@ export default class InputGroup extends React.Component {
           <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
           <SearchButton barcode={inputValue} />
         </div>
+        </div>
     )
     }
 
