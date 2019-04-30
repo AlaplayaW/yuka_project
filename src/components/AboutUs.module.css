@@ -2,7 +2,7 @@
 	border: 1px dotted green;
 } */
 .bgImg {
-	background-image: url("../images/bg-aboutus.png");
+	background-color: #fede4f;
 }
 .hovereffect {
 	width: 100%;
@@ -49,7 +49,6 @@
 }
 .titleMemberPage {
 	font-family: "Patrick Hand";
-	background-color: #fede4f;
 	color: white;
 	font-size: 50px;
 }
