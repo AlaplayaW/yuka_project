@@ -74,19 +74,19 @@ export default class PlusProductPicto extends React.Component {
 	render() {
 		return (
 			<Row className="m-auto pt-5">
-				<Col>
+				<Col xs={{ size: 6 }} sm={{ size: 6 }} lg={{ size: 3 }}>
 					<CardImg src={this.algoBio()} alt="produit bio" />
 				</Col>
-				<Col>
+				<Col xs={{ size: 6 }} sm={{ size: 6 }} lg={{ size: 3 }}>
 					<CardImg src={this.algoMade()} alt="Fabriqué en France" />
 				</Col>
-				<Col>
+				<Col xs={{ size: 6 }} sm={{ size: 6 }} lg={{ size: 3 }}>
 					<CardImg
 						src={this.algoPalme()}
 						alt="Ne contient pas d'huile de palme"
 					/>
 				</Col>
-				<Col>
+				<Col xs={{ size: 6 }} sm={{ size: 6 }} lg={{ size: 3 }}>
 					<CardImg src={this.algoGluten()} alt="Sans gluten" />
 				</Col>
 			</Row>
