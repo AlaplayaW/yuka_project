@@ -1,44 +1,50 @@
 h3 {
-  font-size: 1rem !important;
+	font-size: 1.3rem !important;
+	font-family: "Patrick Hand SC", cursive;
 }
 
-a.youtube {
-  color: black;
+.youtube {
+	color: #495057;
+}
+.youtube:hover, 
+.youtube:active {
+	color: #e26d38;
 }
 
-a.facebook {
-  color: black;
+.facebook {
+	color: #495057;
+}
+.facebook:hover, 
+.facebook:active {
+	color: #e26d38;
 }
 
-a.twitter {
-  color: black;
+.twitter {
+	color: #495057;
+}
+.twitter:hover, 
+.twitter:active {
+	color: #e26d38;
 }
 
 .Mobile {
-  font-weight: 600 !important;
-}
-.Mobile a:hover {
-  text-decoration: none;
-}
-.Mobile a:focus {
-  color: green !important;
+	font-weight: 600 !important;
 }
 
-/* Grow */
 .HvrGrow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  margin: 0 1rem;
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	margin: 0 1rem;
 }
 
 .HvrGrow:hover,
 .HvrGrow:focus,
 .HvrGrow:active {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }

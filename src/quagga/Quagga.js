@@ -1,9 +1,11 @@
+
 import React, { Component } from "react";
 import Scanner from "./Scanner";
 import { Redirect } from "react-router-dom";
 import "./Quagga.css";
 import { Progress } from "reactstrap";
 import Quagga from "quagga";
+
 
 class QuaggaApp extends Component {
 	constructor(props) {
@@ -86,6 +88,7 @@ class QuaggaApp extends Component {
   {this.state.scanning ? 'Stop' : 'Scan' }
 	</button> */}
 	<div className="container-fluid quagga">
+
 
 				{this.state.scanning ? (
 					<>

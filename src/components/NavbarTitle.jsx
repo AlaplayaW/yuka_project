@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
 	Collapse,
 	Navbar,
@@ -7,7 +7,8 @@ import {
 	NavbarBrand,
 	Nav,
 	NavItem,
-	NavLink
+	NavLink,
+	Media
 } from "reactstrap";
 import Quagga from "quagga";
 
@@ -29,6 +30,7 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
+
 			<div>
 				<Navbar expand="lg">
 					<NavbarBrand onClick={Quagga.stop} className={`m-auto`} tag={Link} to="/">
@@ -63,6 +65,7 @@ export default class NavbarTitle extends React.Component {
 					</Collapse>
 				</Navbar>
 			</div>
+
 		);
 	}
 }

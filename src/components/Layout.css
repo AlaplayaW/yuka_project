@@ -1,0 +1,26 @@
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.Site-Content {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  flex:1;
+  width: 100%;
+}
+.Site-Children {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Site-Children > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Site-Footer {
+  min-height: 5vh;
+}
