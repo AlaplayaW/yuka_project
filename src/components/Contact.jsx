@@ -6,11 +6,11 @@ import styles from "./Contact.module.css";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<Form className={`${styles.Form} p-lg-4 d-flex flex-column justify-content-center`}>
-				<Col xs={{ size:10, offset:1}} md={{ size: 6, offset: 3 }} className={`${styles.h1} mt-3`}>Contactez-nous</Col>
-				<FormGroup>
-					<Col xs={{ size:10, offset:1}} md={{ size: 6, offset: 3 }}>
-						<Label for="name"> Nom </Label>
+			<Form className={`${styles.Form} py-4 p-lg-4 d-flex flex-column justify-content-center`}>
+				<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }} className={`${styles.h1}`}>Contactez-nous</Col>
+				<FormGroup className="mb-1">
+					<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
+						<Label for="name" className="mb-1"> Nom </Label>
 						<Input
 							type="name"
 							name="name"
@@ -19,9 +19,9 @@ export default class Contact extends React.Component {
 						/>
 					</Col>
 				</FormGroup>
-				<FormGroup>
-					<Col xs={{ size:10, offset:1}} md={{ size: 6, offset: 3 }}>
-						<Label for="exampleEmail"> Email </Label>
+				<FormGroup className="mb-1">
+					<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
+						<Label for="exampleEmail" className="mb-1"> Email </Label>
 						<Input
 							type="email"
 							name="email"
@@ -30,9 +30,9 @@ export default class Contact extends React.Component {
 						/>
 					</Col>
 				</FormGroup>
-				<FormGroup>
-					<Col xs={{ size:10, offset:1}} md={{ size: 6, offset: 3 }}>
-						<Label for="text"> Objet </Label>
+				<FormGroup className="mb-1">
+					<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
+						<Label for="text" className="mb-1"> Objet </Label>
 						<Input
 							type="text"
 							name="text"
@@ -41,13 +41,13 @@ export default class Contact extends React.Component {
 						/>
 					</Col>
 				</FormGroup>
-				<FormGroup>
-					<Col xs={{ size:10, offset:1}} md={{ size: 6, offset: 3 }}>
-						<Label for="message"> Message </Label>
+				<FormGroup className="mb-1">
+					<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
+						<Label for="message" className="mb-1"> Message </Label>
 						<Input type="textarea" name="text" id="message" />
 					</Col>
 				</FormGroup>
-				<Col xs={{ size:10, offset:1}} md={{ size: 6, offset: 3 }}>
+				<Col xs={{ size:10, offset:1}} lg={{ size: 6, offset: 3 }}>
 					<Button className="m-3"> Envoyer </Button>
 				</Col>
 			</Form>

@@ -52,7 +52,7 @@ export default function Footer() {
 					styles.Mobile
 				} d-lg-none fixed-bottom bg-white border-top`}
 			>
-				<div className="d-flex justify-content-between">
+				<div className="d-flex justify-content-around">
 					<NavLink
 						tag={Link}
 						to="/apropos"
