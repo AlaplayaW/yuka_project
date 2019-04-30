@@ -14,6 +14,7 @@ import ProductNoteFicheB from "./ProductNoteFicheB";
 import ProductNoteFicheC from "./ProductNoteFicheC";
 import ProductNoteFicheD from "./ProductNoteFicheD";
 import ProductNoteFicheE from "./ProductNoteFicheE";
+import ProductNoteFicheOoops from "./ProductNoteFicheOoops";
 import Ooops from "../images/Ooops.png";
 import PlusProductPicto from "./PlusProductPicto";
 // import PictoProduct from "./PictoProduct";
@@ -42,7 +43,7 @@ export default class Product extends React.Component {
 		if (nutriscore === "e") {
 			return <ProductNoteFicheE />;
 		} else {
-			return <img src={Ooops}/>
+			return <ProductNoteFicheOoops />;
 		}
 	}
 
@@ -78,7 +79,7 @@ export default class Product extends React.Component {
 					</Row>
 					<Row className="m-md-5 bg-white">
 						<Col lg={{ size: 4, offset: 4 }}>{this.nutriScorePicture()}</Col>
-						<PlusProductPicto labels={this.props.labels}/>
+						<PlusProductPicto labels={this.props.labels} />
 					</Row>
 					<Row>
 						<Col className="m-2 m-md-5 p-1">
