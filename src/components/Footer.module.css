@@ -4,15 +4,27 @@ h3 {
 }
 
 .youtube {
-	color: black;
+	color: #495057;
+}
+.youtube:hover, 
+.youtube:active {
+	color: #e26d38;
 }
 
 .facebook {
-	color: black;
+	color: #495057;
+}
+.facebook:hover, 
+.facebook:active {
+	color: #e26d38;
 }
 
 .twitter {
-	color: black;
+	color: #495057;
+}
+.twitter:hover, 
+.twitter:active {
+	color: #e26d38;
 }
 
 .Mobile {
