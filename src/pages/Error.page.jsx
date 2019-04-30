@@ -2,12 +2,12 @@ import React from "react";
 
 import SearchInput from "../components/SearchInput";
 import SearchButton from "../components/SearchButton";
+
 import {Redirect} from "react-router-dom";
 
 import Layout from "../components/Layout";
 
 import SwitchButton from "../components/SwitchButton";
-
 
 export default class Error extends React.Component {
 	constructor(props) {
@@ -17,6 +17,7 @@ export default class Error extends React.Component {
 			barCode: ""
 		};
 	}
+
 
 render() {
 	const { inputValue, barCode } = this.state;

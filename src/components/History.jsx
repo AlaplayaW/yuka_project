@@ -11,27 +11,25 @@ class History extends Component {
 		return (
 			<div className={styles.bgBlock}>
 				<Row className="mx-0">
-					<Col lg="6" className={`${styles.imgSuper}`}>
+					<Col xs= "12" lg="6">
 						<CardImg src={SuperHero} alt="" />
 					</Col>
-					<Col lg="6" className="align-self-center">
-						<p className={`${styles.text} d-none d-lg-block m-5`}>
-							Welcome petit !! <br />
-							Devine quoi? Il paraît que les aliments ont des supers pouvoirs!
-							<br />
-							Ils sont cachés dans les codes barres !
+					<Col xs="12" lg="6" className="align-self-center">
+						<p className={`${styles.textLaptop} d-none d-lg-block m-5`}>
+							Devine quoi? Les aliments ont des supers pouvoirs... ils sont cachés dans les codes barres !
+							<br/>Utilise le scanner pour les découvrir!
 						</p>
 						<Button
 							tag={Link} to="/scan"
 							color="info"
 							className="d-none d-lg-block m-5"
 						>
-							Click ici pour accéder au scanner !
+							Clique ici pour accéder au scanner !
 						</Button>
-						<div className={`${styles.text} d-lg-none`}>
+						<div className={`${styles.textMobile} d-lg-none`}>
 							<p>
-								Appuie sur le code barre pour scanner les produits et découvrir
-								leurs supers pouvoirs!
+								Appuie sur le bouton pour scanner le code barre et découvrir
+								leurs pouvoirs cachés!
 							</p>
 						</div>
 					</Col>

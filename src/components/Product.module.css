@@ -1,18 +1,46 @@
+/* * {
+	border: 1px dotted green;
+} */
+
 .Bg {
-  background-image: url(../images/comicsBackground.jpg);
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	/* background-image: url(../images/candy.jpg); */
+	background-color: #9ac455;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .CardStyle {
+	background-color: white !important;
+	border-radius: 20px 20px 20px 20px !important;
+	-moz-border-radius: 20px 20px 20px 20px !important;
+	-webkit-border-radius: 20px 20px 20px 20px !important;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5) !important;
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5) !important;
+}
 
-  border-radius: 20px 20px 20px 20px !important;
-  -moz-border-radius: 20px 20px 20px 20px !important;
-  -webkit-border-radius: 20px 20px 20px 20px !important;
-  
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5) !important;
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5) !important;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5) !important;
+.h2product {
+	font-family: "Quicksand";
+	font-weight: bold;
+}
+
+.brandName {
+	font-family: "Quicksand";
+	font-size: 1.7em;
+	font-weight: lighter;
+}
+
+.infoProduct {
+	/* box-shadow: 10px 5px 5px red; */
+	box-shadow: 12px 12px 8px 3px rgba(154, 196, 85, 0.2);
+	border: solid 5px #9ac455 !important;
+}
+
+.buttonInfos {
+	/* background-color: #fede4f !important;
+	border-color: #fede4f !important; */
+	color: white !important;
+	font-weight: bold !important;
 }

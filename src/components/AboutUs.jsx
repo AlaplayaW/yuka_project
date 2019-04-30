@@ -1,18 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, Row, Col, CardTitle, CardImg } from "reactstrap";
 
 import Jim from "../images/jim.png";
 import JB from "../images/jb.png";
 import Perrine from "../images/perrine.png";
 import Cloe from "../images/cloe.png";
-import Layout from "../components/Layout";
-import styles from "./AboutUs.module.css";
 
+import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
 	return (
-		<Layout>
-			<div className={`${styles.bgImg} container-fluid`}>
+			<div className={`${styles.bgImg} container-fluid`} style={{minHeight: "84vh"}}>
 				<Row className="d-flex justify-content-center">
 					<p className={styles.titleMemberPage}> LA TEAM YUKIDS </p>
 				</Row>
@@ -59,6 +57,5 @@ export default function AboutUs() {
 					</Col>
 				</Row>
 			</div>
-		</Layout>
 	);
 }

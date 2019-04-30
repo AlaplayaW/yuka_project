@@ -1,16 +1,11 @@
 import React from "react";
-import SearchInput from "./SearchInput";
-import SearchButton from "./SearchButton";
 import {Redirect} from "react-router-dom";
 import Quagga from "../quagga/Quagga"
+
+import SearchInput from "./SearchInput";
+import SearchButton from "./SearchButton";
 import styles from "./InputGroup.module.css";
 
-const homePageStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "10vh",
-};
 
 export default class InputGroup extends React.Component {
   constructor(props) {
@@ -21,11 +16,9 @@ export default class InputGroup extends React.Component {
     };
   }
 
-
-
   render() {
       const { inputValue, barCode } = this.state;
-    if (barCode) {return <Redirect to={`/product/${barCode}`}/>}
+    if (barCode) {return <Redirect to={`/product/${barCode}`}/>} {
 
     return (     
         <div className={`${styles.inputText}`}>
@@ -34,5 +27,6 @@ export default class InputGroup extends React.Component {
         </div>
     )
     }
-  }
 
+  }
+}
