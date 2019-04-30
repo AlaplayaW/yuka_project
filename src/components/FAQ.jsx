@@ -4,16 +4,17 @@ import FaqCollapse from "./FaqCollapse";
 
 export default function Faq() {
 	return (
-		<div style={{ backgroundColor: "#fede4f", flex:"1" }}>
+		<div style={{ backgroundColor: "#fede4f", flex: "1" }}>
 			<h1
 				style={{
 					textAlign: "center",
 					fontFamily: "Patrick Hand",
-					fontSize: "2rem",
-					color: "#922D61",
+					fontSize: "40px",
+					fontWeight: "bold",
+					color: "#922D61"
 				}}
 			>
-				Foire Aux Questions
+				FOIRE AUX QUESTIONS
 			</h1>
 			<FaqCollapse title="Comment scanner ?" description="Demande à Google" />
 			<FaqCollapse
