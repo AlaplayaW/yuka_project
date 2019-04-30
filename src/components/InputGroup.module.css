@@ -1,8 +1,7 @@
 .container {
   text-align: center;
   background-color:#FEDE4F;
-  height: 85vh;
-  /* background-color:rgb(255, 231, 94) */
+  flex: 1;
 }
 
 .inputText{

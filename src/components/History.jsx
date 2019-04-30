@@ -14,15 +14,14 @@ class History extends Component {
 					<Col xs= "12" lg="6">
 						<CardImg src={SuperHero} alt="" />
 					</Col>
-					<Col xs="12" lg="6" className="align-self-center">
-						<p className={`${styles.textLaptop} d-none d-lg-block m-5`}>
+					<Col xs="12" lg="6" className="m-auto d-flex flex-column">
+						<p className={`${styles.textLaptop} d-none d-lg-block m-4`}>
 							Devine quoi? Les aliments ont des supers pouvoirs... ils sont cachés dans les codes barres !
 							<br/>Utilise le scanner pour les découvrir!
 						</p>
 						<Button
 							tag={Link} to="/scan"
-							color="info"
-							className="d-none d-lg-block m-5"
+							className={`d-none d-lg-block mx-auto mt-5 ${styles.myButton}`}
 						>
 							Clique ici pour accéder au scanner !
 						</Button>

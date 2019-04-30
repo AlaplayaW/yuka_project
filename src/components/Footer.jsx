@@ -16,9 +16,9 @@ export default function Footer() {
 		<div className={`bg-white`}>
 			{/* FOOTER DESKTOP */}
 			<div className={`d-none d-lg-block border-top`}>
-				<div className={`d-flex justify-content-between py-3`}>
+				<div className={`d-flex justify-content-between px-3`}>
 					<h3 className="p-2">@ Cloé, Perrine, Jim, Doc</h3>
-					<div>
+					<div className="d-flex align-items-center">
 						<a
 							href="https://www.youtube.com/watch?v=D9rFCgZa9zs"
 							target="_blank"
@@ -53,16 +53,16 @@ export default function Footer() {
 				} d-lg-none fixed-bottom bg-white border-top`}
 			>
 				<div className="d-flex justify-content-around">
-					<NavLink
+					{/* <NavLink
 						tag={Link}
 						to="/apropos"
 						className="py-3"
 						style={{ color: "black" }}
 					>
 						A propos
-					</NavLink>
+					</NavLink> */}
 
-					<Badge tag={Link} to="/scan" color="" pill className={`p-1`}>
+					<Badge tag={Link} to="/scan" color="#495057" pill className={`p-1`}>
 						<img
 							className=""
 							src={Barcode}
@@ -70,14 +70,14 @@ export default function Footer() {
 							alt="scan"
 						/>
 					</Badge>
-					<NavLink
+					{/* <NavLink
 						tag={Link}
 						to="/contact"
 						className="py-3"
 						style={{ color: "black" }}
 					>
 						Contact
-					</NavLink>
+					</NavLink> */}
 				</div>
 			</div>
 		</div>
