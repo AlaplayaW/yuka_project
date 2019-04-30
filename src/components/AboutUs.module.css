@@ -1,6 +1,7 @@
 /* * {
 	border: 1px dotted green;
 } */
+
 .bgImg {
 	background-color: #fede4f;
 }
@@ -18,17 +19,19 @@
 
 .hovereffect .CardTitle {
 	font-family: "Patrick Hand";
-	color: #9ac455;
+	color: #495057;
+	font-weight: bold;
 	text-align: center;
 	font-size: 25px;
 	padding-bottom: 10px;
 }
 
 .hovereffect p {
-	color: black;
+	font-family: "Patrick Hand";
+	font-size: 1.3em;
+	color: #495057;
 	position: absolute;
 	text-align: center;
-	font-weight: bold;
 	margin-top: 25%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -49,10 +52,18 @@
 }
 .titleMemberPage {
 	font-family: "Patrick Hand";
-	color: white;
+	font-weight: bold;
+	color: #922d61;
 	font-size: 50px;
 }
 
 .bgTitle {
 	background-color: #fede4f;
+}
+
+.prezMember {
+	font-family: "Patrick Hand";
+	color: #495057;
+	font-size: 1.5em;
+	text-align: center;
 }
