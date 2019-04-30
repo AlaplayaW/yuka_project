@@ -16,6 +16,11 @@ video {
   width: 85%;
   height: 85%;
   max-height: 65vh;
+  /* border: black solid 2px; */
+}
+
+#interactive.viewport canvas{
+display: none;
 }
 
 .drawingBuffer{
@@ -24,9 +29,12 @@ video {
 
 #interactive.viewport canvas.drawingBuffer, video.drawingBuffer {
   margin-left: -640px;
+
 } 
 
 .container {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -34,4 +42,5 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: red solid 2px; */
 }
