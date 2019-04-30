@@ -29,11 +29,11 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-			<Navbar color="white" light expand="lg" className="border-bottom">
+			<Navbar light expand="lg" className="border-bottom">
 				<NavbarBrand tag={Link} to="/">
-					<Media object src={Logo} alt="logo yukids" className={styles.imgLogo} />
+					<Media object src={Logo} alt="logo yukids" className={`${styles.imgLogo} pl-3`} />
 				</NavbarBrand>
-				<NavbarToggler onClick={this.toggle} />
+				<NavbarToggler onClick={this.toggle} className="border-none"/>
 				<Collapse isOpen={this.state.isOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						<NavItem>
