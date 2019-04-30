@@ -17,19 +17,27 @@ export default class InputGroup extends React.Component {
   }
 
   render() {
+    
       const { inputValue, barCode } = this.state;
     if (barCode) {return <Redirect to={`/product/${barCode}`}/>} {
 
     return (
+      
       <div className={`${styles.container}`}>
 
         <div className={`${styles.inputText}`}>
           <SearchInput onChange={inputValue => this.setState({ inputValue })} value={inputValue}/>
           <SearchButton barcode={inputValue} />
         </div>
-        </div>
-    )
-    }
+ 
 
-  }
+        <div className={`${styles.scan}`}>
+        <Quagga />
+        </div>
+        
+      </div>
+    )
+
+  };
+}
 }
