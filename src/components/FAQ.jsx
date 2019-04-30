@@ -4,7 +4,7 @@ import FaqCollapse from "./FaqCollapse";
 
 export default function Faq() {
 	return (
-		<div style={{ backgroundColor: "#fede4f"}}>
+		<div style={{ backgroundColor: "#fede4f", flex:"1" }}>
 			<h1
 				style={{
 					textAlign: "center",

@@ -32,8 +32,12 @@ render() {
 			textShadow: "3px 3px 3px black",
 			color: '#FF6319',
 			fontSize: '1.5em',
+<<<<<<< HEAD
+=======
 			height: '80vh',
 			backgroundColor: '#FEDE4F',
+			backgroundSize: 'cover',
+>>>>>>> 169969ef104460af159837628f455a86ea8d32a3
 			}}>
 				<p
 					style={{

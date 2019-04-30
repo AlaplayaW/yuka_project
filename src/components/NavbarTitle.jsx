@@ -32,13 +32,11 @@ export default class NavbarTitle extends React.Component {
 		return (
 
 			<div>
-				<Navbar expand="lg">
+				<Navbar expand="lg" light>
 					<NavbarBrand onClick={Quagga.stop} className={`m-auto`} tag={Link} to="/">
 						<img src={Logo} alt="logo yukids" className={styles.imgLogo} />
 					</NavbarBrand>
-					{/*Centre le titre quand on passe sur mobile*/}
-					<NavbarToggler className="d-none" onClick={this.toggle} />
-					{/*Fais disparaitre le toggler quand on passe sur mobile */}
+					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
