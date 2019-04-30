@@ -4,9 +4,9 @@ import SearchInput from "../components/SearchInput";
 import SearchButton from "../components/SearchButton";
 import {Redirect} from "react-router-dom";
 
-import Quagga from "../quagga/Quagga";
 import Layout from "../components/Layout";
 
+import SwitchButton from "../components/SwitchButton";
 
 
 export default class Error extends React.Component {
@@ -18,49 +18,48 @@ export default class Error extends React.Component {
 		};
 	}
 
-	render() {
-		const { inputValue, barCode } = this.state;
-		if (barCode) {
-			return <Redirect to={`/product/${barCode}`} />;
-		}
-
-		return (
-			<Layout>
-			<div style={{ 
-				textAlign: "center", 
-				textShadow: "3px 3px 3px black",
-				color: '#FF6319',
-				fontSize: '1.5em',
-				height: '80vh',
-				backgroundImage: "url('https://cdn.pixabay.com/photo/2014/06/18/13/25/cherries-371233_1280.jpg')",
-				backgroundSize: 'cover',
-				}}>
-					<p
-						style={{
-							textAlign: "center",
-							fontFamily: "Patrick Hand SC",
-							fontSize: "2em"
-						}}
-					>
-						OOOPS ! Ce produit n'a pas été trouvé
-					</p>
-					<p
-						style={{
-							textAlign: "center",
-							fontFamily: "Patrick Hand SC",
-							fontSize: "2em"
-						}}
-					>
-						Retente ta chance juste en dessous !
-					</p>
-					<SearchInput
-						onChange={inputValue => this.setState({ inputValue })}
-						value={inputValue}
-						/>
-					<SearchButton barcode={inputValue} />
-					<Quagga />
-				</div>
-			</Layout>
-		);
+render() {
+	const { inputValue, barCode } = this.state;
+	if (barCode) {
+		return <Redirect to={`/product/${barCode}`} />;
 	}
+
+	return (
+		<Layout>	
+		<div style={{ 
+			textAlign: "center", 
+			textShadow: "3px 3px 3px black",
+			color: '#FF6319',
+			fontSize: '1.5em',
+			height: '80vh',
+			backgroundImage: "url('https://www.enekia.com/wp-content/uploads/2016/05/Logo-1.jpg')",
+			backgroundSize: 'cover',
+			}}>
+				<p
+					style={{
+						textAlign: "center",
+						fontFamily: "Patrick Hand SC",
+						fontSize: "2em"
+					}}
+				>
+					OOOPS ! Ce produit n'a pas été trouvé
+				</p>
+				<p
+					style={{
+						textAlign: "center",
+						fontFamily: "Patrick Hand SC",
+						fontSize: "2em"
+					}}
+				>
+					Retente ta chance juste en dessous !
+				</p>
+				<SwitchButton	
+				onChange={inputValue => this.setState({ inputValue })}
+				value={inputValue}
+				barcode={inputValue}
+				/>
+			</div>
+		</Layout>
+	);
+}
 }

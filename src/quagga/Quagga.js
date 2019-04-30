@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Scanner from './Scanner';
 import {Redirect} from "react-router-dom";
-import './Quagga.css'
 
 
 class Quagga extends Component {
@@ -60,7 +59,6 @@ constructor(props){
 }
 
   render() {
-
   // Product page redirection when bestBarcode() returns the most occuring barcode 
   const barCode = this.state.bestResult;
   if (barCode === null) {

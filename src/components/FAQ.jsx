@@ -27,7 +27,7 @@ export default function Faq() {
       /> 
       <CollapseFaq 
       title = "Comment sont vérifiées les informations renseignées dans l’application ?" 
-      description = "Vérification par l'équipe Yuka et par les utilisateurs"
+      description = "Vérification par l'équipe Yukids et par les utilisateurs"
       /> 
       <CollapseFaq 
       title = "J’ai scanné un produit qui n’a aucune note, pourquoi ?" 
