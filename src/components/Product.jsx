@@ -42,7 +42,7 @@ export default class Product extends React.Component {
 		if (nutriscore === "e") {
 			return <ProductNoteFicheE />;
 		} else {
-			return Ooops;
+			return <img src={Ooops}/>
 		}
 	}
 
