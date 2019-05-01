@@ -14,8 +14,12 @@ export default function AboutUs() {
 			className={`${styles.bgImg} container-fluid`}
 			style={{ minHeight: "84vh" }}
 		>
-			<Row className="d-flex justify-content-center pt-4">
-				<p className={styles.titleMemberPage}> LA TEAM YUKIDS </p>
+			<Row
+				className={`${
+					styles.titleMemberPage
+				} d-flex justify-content-center pt-4`}
+			>
+				<p> LA TEAM YUKIDS </p>
 			</Row>
 			<Row className="d-flex justify-content-center">
 				<Col className="p-2" lg={{ size: 6 }}>

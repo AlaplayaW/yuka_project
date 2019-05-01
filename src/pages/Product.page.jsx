@@ -9,7 +9,6 @@ import Layout from "../components/Layout";
 export default function ProductPage({ match }) {
 	return (
 		<Layout>
-
 			<Fetch
 				requestUrl={`https://fr.openfoodfacts.org/api/v0/produit/${
 					match.params.barcode
@@ -39,7 +38,8 @@ export default function ProductPage({ match }) {
 								saturedFatU={product["nutriments"]["saturated-fat_unit"]}
 								saltV={product.nutriments.salt_value}
 								saltU={product.nutriments.salt_unit}
-								labels={product.labels_tags}
+								// labels={product.labels_tags}
+								pictos={product.labels}
 							/>
 						);
 				}}

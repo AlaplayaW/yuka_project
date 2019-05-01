@@ -19,11 +19,11 @@ class LegendPower extends Component {
 			collapse: false,
 			power: [
 				{
-					power: "SUPER HERO",
+					power: "SUPER HÉRO",
 					noteNutriscore: "A",
 					image: NoteA,
 					description:
-						"Excellent ce produit est plein de supers pouvoirs, continue comme ça !!!"
+						"Excellent travail, ce produit est plein de supers pouvoirs, continue comme ça !!!"
 				},
 				{
 					power: "FORCE VERTE",
@@ -37,7 +37,7 @@ class LegendPower extends Component {
 					noteNutriscore: "C",
 					image: NoteC,
 					description:
-						"Bof bof !! Ce produit n'est ni bon ni mauvais, tu peux trouver mieux n'hésite pas à chercher encore."
+						"Bof bof !! Ce produit n'est tip top, tu peux trouver mieux n'hésite pas à chercher encore ;)"
 				},
 				{
 					power: "FORCE ORANGE",
@@ -47,14 +47,14 @@ class LegendPower extends Component {
 						"Hum... force orange n'est pas un très bon pouvoir... Cherche encore il existe des produits similaires avec de meilleurs pouvoirs."
 				},
 				{
-					power: "FORCE MALEFIQUE",
+					power: "FORCE MALÉFIQUE",
 					noteNutriscore: "E",
 					image: NoteE,
 					description:
-						"Attention, ce produit a des pouvoirs maléfiques !!  Vérifie auprès de tes parents avant de l'ajouter au panier !!!"
+						"Attention, ce produit a des pouvoirs maléfiques !!  Vérifie auprès de tes parents avant de le prendre !!!"
 				},
 				{
-					power: "MYSTERE !",
+					power: "MYSTÈRE !",
 					noteNutriscore: "undefined",
 					image: Unknow,
 					description:
@@ -71,16 +71,26 @@ class LegendPower extends Component {
 	render() {
 		return (
 			<div className={`${styles.container} pb-3`}>
-				<h2 className={`${styles.h2Laptop} p-1 mb-1 text-center d-none d-lg-block`}>LES POUVOIRS SECRETS</h2>
+				<h2
+					className={`${
+						styles.h2Laptop
+					} p-1 mb-1 text-center d-none d-lg-block`}
+				>
+					LES POUVOIRS SECRETS
+				</h2>
 				<CardDeck className="d-none d-lg-flex justify-content-around m-0">
 					{this.state.power.map((powerList, index) => {
 						return <SuperPower {...powerList} key={index} />;
 					})}
 				</CardDeck>
 				<div className="mb-2">
-					<h2 className={`${styles.h2Mobile} p-2 text-center d-block d-lg-none`}>LES POUVOIRS SECRETS</h2>
-						{this.state.power.map((powerAccordion, index) => {
-						return <AccordionPower {...powerAccordion} key={index}/>;
+					<h2
+						className={`${styles.h2Mobile} p-2 text-center d-block d-lg-none`}
+					>
+						LES POUVOIRS SECRETS
+					</h2>
+					{this.state.power.map((powerAccordion, index) => {
+						return <AccordionPower {...powerAccordion} key={index} />;
 					})}
 				</div>
 			</div>

@@ -7,7 +7,7 @@ import {
 	Col,
 	DropdownToggle,
 	ButtonDropdown,
-	Container,
+	Container
 } from "reactstrap";
 
 import styles from "./AccordionPower.module.css";
@@ -36,7 +36,10 @@ class AccordionPower extends Component {
 					</Col>
 					<Col xs="8" className="d-flex justify-content-center">
 						<ButtonDropdown onClick={this.toggle}>
-							<Button color="transparent" className={`${styles.button} px-0 py-2`}>
+							<Button
+								color="transparent"
+								className={`${styles.button} px-0 py-2`}
+							>
 								{this.props.power}
 							</Button>
 							<DropdownToggle color="transparent" className="border px-3">
@@ -45,7 +48,7 @@ class AccordionPower extends Component {
 						</ButtonDropdown>
 					</Col>
 					<Collapse isOpen={this.state.collapse} className="m-2">
-						<div>{this.props.description}</div>
+						<div className={styles.textPower}>{this.props.description}</div>
 					</Collapse>
 				</Row>
 			</Container>

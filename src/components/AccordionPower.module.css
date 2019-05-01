@@ -1,9 +1,14 @@
 .button {
-  background-color: #e6e7e8 !important;
-  font-family: "Patrick Hand", cursive;
-  font-size: 1rem !important;
-  min-width: 130px;
+	background-color: #e6e7e8 !important;
+	font-family: "Patrick Hand", cursive;
+	font-size: 1rem !important;
+	min-width: 130px;
 }
 .image {
-  width: 100%;
+	width: 100%;
+}
+
+.textPower {
+	font-family: "Patrick Hand";
+	font-size: 1.2em;
 }
