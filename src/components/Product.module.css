@@ -3,7 +3,12 @@
 } */
 
 .Bg {
-	background-color: #fede4f;
+	background-color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(154, 196, 85, 0.7),
+    rgba(154, 196, 85, 1)
+  );
 	height: auto;
 	background-position: center;
 	background-repeat: no-repeat;

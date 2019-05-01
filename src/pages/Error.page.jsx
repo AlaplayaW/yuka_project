@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
+
 import Layout from "../components/Layout";
 import SwitchButton from "../components/SwitchButton";
 import styles from "./Error.page.module.css";

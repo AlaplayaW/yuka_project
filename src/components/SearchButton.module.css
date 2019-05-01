@@ -1,8 +1,5 @@
-.button, .button :visited{
-  text-decoration: none;
-  color: #4C4C4C;
-}
-.button :hover {
-  color: black;
+.button, .button :hover, .button :visited {
+  background-color: #E26D38 !important;
+  color: white !important;
   text-decoration: none;
 }
