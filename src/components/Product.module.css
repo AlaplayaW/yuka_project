@@ -32,7 +32,6 @@
 }
 
 .infoProduct {
-	/* box-shadow: 10px 5px 5px red; */
 	box-shadow: 12px 12px 8px 3px rgba(154, 196, 85, 0.2);
 	border: solid 5px #9ac455 !important;
 }
