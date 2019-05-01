@@ -3,7 +3,6 @@
 } */
 
 .Bg {
-	/* background-image: url(../images/candy.jpg); */
 	background-color: #fede4f;
 	height: auto;
 	background-position: center;
@@ -39,8 +38,11 @@
 }
 
 .buttonInfos {
-	/* background-color: #fede4f !important;
-	border-color: #fede4f !important; */
+	font-family: "Quicksand";
 	color: white !important;
 	font-weight: bold !important;
+}
+
+.collapseStyle {
+	font-family: "Quicksand";
 }

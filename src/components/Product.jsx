@@ -94,7 +94,7 @@ export default class Product extends React.Component {
 								Plus d'informations sur ce produit (pour 100g)
 							</Button>
 							<Collapse isOpen={this.state.collapse} style={{ width: "100%" }}>
-								<Card className="m-2 m-md-1 p-1">
+								<Card className={`${styles.collapseStyle} m-2 m-md-1 p-1`}>
 									<CardBody className="py-0">
 										<Row className="d-flex flex-column text-center">
 											<Col className="p-3">
