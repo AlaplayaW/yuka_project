@@ -1,17 +1,4 @@
-.button {
-  border-radius: 0%;
-}
-
 .progressBar {
   width: 60vw;
   padding: 2vh;
-}
-
-/* .border8 {
-  border: solid red 4px;
-  width: 100vw;
-} */
-
-.quagga {
-  max-height: 60vh
 }

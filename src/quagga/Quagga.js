@@ -98,7 +98,7 @@ class QuaggaApp extends Component {
 					<>
 						
 							<div className="row">
-								<div className="col-12 border8">
+								<div className="col-12">
 									<Scanner onDetected={this._onDetected} />
 								</div>
 							</div>
