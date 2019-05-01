@@ -1,7 +1,9 @@
 .image {
   width: 50% !important;
 }
-
+.card {
+  color: #495057;
+}
 .cardTitle {
   font-size: 1.5rem;
 }

@@ -15,7 +15,7 @@ const SuperPower = props => {
 					alt="Power"
 					className={`${styles.image} mx-auto`}
 				/>
-				<CardBody className={`${styles.cardText} p-1`}>
+				<CardBody className={`p-1`}>
 					<CardText>{props.description}</CardText>
 				</CardBody>
 			</Card>
