@@ -1,0 +1,16 @@
+p.textLaptop{
+	font-family: "Patrick Hand", cursive ;
+	text-align: center ;
+	font-size: 1.5em;
+	color: #86328b ;
+}
+
+.border {
+  border: black solid 1px;
+}
+
+.block {
+  height: 80vh;
+  /* text-align: center; */
+  background-color: #FEDE4F;
+}
