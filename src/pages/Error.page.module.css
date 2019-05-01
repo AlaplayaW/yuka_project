@@ -10,7 +10,7 @@ p.textLaptop{
 }
 
 .block {
-  height: 80vh;
+  /* height: 80vh; */
   /* text-align: center; */
   background-color: #FEDE4F;
 }

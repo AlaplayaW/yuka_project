@@ -1,9 +1,9 @@
 .container {
   text-align: center;
   background-color:#FEDE4F;
-  min-height: 85vh;
+  /* min-height: 85vh; */
   /* background-color:rgb(255, 231, 94) */
-  flex: 1;
+  /* flex: 1; */
 }
 
 .inputText{

@@ -13,5 +13,6 @@
 } */
 
 .quagga {
-  max-height: 60vh
+  height: 85vh;
+  /* max-height: 60vh */
 }
