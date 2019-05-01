@@ -2,9 +2,15 @@ import React from "react";
 
 import FaqCollapse from "./FaqCollapse";
 
+const FaqStyle = {
+	backgroundColor: "white",
+  backgroundImage: 'linear-gradient(to bottom,rgba(254, 222, 79, 0.7),rgba(254, 222, 79, 1))'
+	}
+
+
 export default function Faq() {
 	return (
-		<div style={{ backgroundColor: "#fede4f", flex:"1" }}>
+		<div style={ FaqStyle }>
 			<h1
 				style={{
 					textAlign: "center",
