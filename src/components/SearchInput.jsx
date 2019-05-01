@@ -7,7 +7,7 @@ export default function SearchInput({ onChange, value }) {
 		<Input
 			value={value}
 			onChange={event => onChange(event.target.value)}
-			placeholder="chiffres du codebarre"
+			placeholder="Chiffres du codebarre"
 		/>
 	);
 }

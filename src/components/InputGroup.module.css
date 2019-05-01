@@ -11,7 +11,7 @@
 .inputBar{
   max-width: 60vw !important;
   align-self: center;
-  margin-top: 8vh;
+  margin-top: 3vh;
 }
 
 
@@ -29,6 +29,6 @@ max-width: 70vw;
   .inputBar{
     max-width: 90vw !important;
     align-self: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
   }
 }

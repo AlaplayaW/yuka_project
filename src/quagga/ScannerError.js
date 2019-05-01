@@ -51,15 +51,10 @@ class Scanner extends Component {
     
     return (
       <>
-        <div className="container">
-
         <div id="interactive" className="viewport">
         <video autoPlay={true} preload="auto" src="" muted={true} playsInline={true}></video>
         <canvas id="canvas" className="drawingBuffer"></canvas>
         </div>
-
-        </div>
-
       </>
     )
   }
