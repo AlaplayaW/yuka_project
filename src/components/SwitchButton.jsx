@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Switch from "react-switch";
-import Quagga from "../quagga/Quagga";
-import InputGroup from "./InputGroup";
+import QuaggaError from "../quagga/QuaggaError";
+import InputGroupError from "./InputGroupError";
 
 export default class SwitchExample extends Component {
 	constructor() {
@@ -18,8 +18,11 @@ export default class SwitchExample extends Component {
 
 	render() {
 		return (
-			<div>
-				<label htmlFor="material-switch">
+			<>
+			<div style={{
+				textAlign: "center"
+			}}>
+				{/* <label htmlFor="material-switch">
 					<span
 						style={{
 							textAlign: "center",
@@ -27,10 +30,11 @@ export default class SwitchExample extends Component {
 							fontSize: "1.5em"
 						}}
 					>
-						SWITCH POUR UTILISER LA CAM
+			
 					</span>
 				</label>
-				<br />
+				<br /> */}
+				{console.log(this.state.checked)}
 				<Switch
 					checked={this.state.checked}
 					onChange={this.handleChange}
@@ -46,8 +50,12 @@ export default class SwitchExample extends Component {
 					className="react-switch"
 					id="material-switch"
 				/>
-				{this.state.checked ? <Quagga /> : <InputGroup />}
-			</div>
+				</div>
+				<div>
+				{this.state.checked ? <QuaggaError checked={this.state.checked}/> : <InputGroupError />}
+				{console.log(this.state.checked)}
+				</div>
+				</>
 		);
 	}
 }
