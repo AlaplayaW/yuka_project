@@ -6,14 +6,12 @@
     rgba(254, 222, 79, 0.7),
     rgba(254, 222, 79, 1)
   );
-  /* height: 90vh; */
 }
 
 .inputBar{
   max-width: 60vw !important;
   align-self: center;
   margin-top: 3vh;
-  
 }
 
 
@@ -22,7 +20,7 @@ padding: 10px 10px 10px 10px;
 
 border-radius: 30px;
 align-self: center;
-max-width: 85vw;
+max-width: 70vw;
 }
 @media (max-width: 991px) {
   .scan {
