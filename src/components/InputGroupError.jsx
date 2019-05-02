@@ -1,6 +1,5 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import Quagga from "../quagga/Quagga";
 import { InputGroup, InputGroupAddon } from "reactstrap";
 
 import SearchInput from "./SearchInput";

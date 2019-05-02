@@ -7,10 +7,8 @@ import {
 	NavbarBrand,
 	Nav,
 	NavItem,
-	NavLink,
-	Media
+	NavLink
 } from "reactstrap";
-import Quagga from "quagga";
 
 import Logo from "../images/logo_yukids1.png";
 import styles from "./NavbarTitle.module.css";
@@ -30,7 +28,6 @@ export default class NavbarTitle extends React.Component {
 	}
 	render() {
 		return (
-
 			<div>
 				<Navbar expand="lg" light>
 					<NavbarBrand className={`m-auto`} tag={Link} to="/">
@@ -63,7 +60,6 @@ export default class NavbarTitle extends React.Component {
 					</Collapse>
 				</Navbar>
 			</div>
-
 		);
 	}
 }
