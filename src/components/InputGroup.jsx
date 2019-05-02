@@ -33,7 +33,7 @@ export default class SearchBar extends React.Component {
 							value={inputValue}
 						/>
 						<InputGroupAddon addonType="append">
-							<SearchButton barcode={inputValue} />
+							<SearchButton barcode={inputValue} value={inputValue} />
 						</InputGroupAddon>
 					</InputGroup>
 				</div>
