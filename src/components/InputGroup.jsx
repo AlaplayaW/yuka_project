@@ -27,7 +27,7 @@ export default class SearchBar extends React.Component {
 					<div className={`${styles.scan}`}>
 						<Quagga />
 					</div>
-					<InputGroup className={`${styles.inputBar}`}>
+					<InputGroup className={`${styles.inputBar} pb-5`}>
 						<SearchInput
 							onChange={inputValue => this.setState({ inputValue })}
 							value={inputValue}

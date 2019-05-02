@@ -1,8 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 
-import Layout from "../components/Layout";
-
 import SwitchButton from "../components/SwitchButton";
 
 export default class Scan extends React.Component {
