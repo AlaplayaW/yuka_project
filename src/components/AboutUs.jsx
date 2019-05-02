@@ -10,10 +10,7 @@ import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
 	return (
-		<div
-			className={`${styles.bgImg} container-fluid`}
-			style={{ minHeight: "84vh" }}
-		>
+		<div className={`${styles.bgImg} container-fluid mb-5`}>
 			<Row
 				className={`${
 					styles.titleMemberPage

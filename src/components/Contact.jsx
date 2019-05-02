@@ -10,9 +10,7 @@ export default class Contact extends React.Component {
 				<Form
 					className={`${styles.Form} d-flex flex-column justify-content-center`}
 				>
-					<Row
-						className={`${styles.h1} mx-0 d-flex justify-content-center`}
-					>
+					<Row className={`${styles.h1} mx-0 d-flex justify-content-center`}>
 						CONTACTEZ-NOUS
 					</Row>
 					<FormGroup className="mb-1">
@@ -67,7 +65,7 @@ export default class Contact extends React.Component {
 						</Col>
 					</FormGroup>
 					<Col xs={{ size: 10, offset: 1 }} lg={{ size: 6, offset: 3 }}>
-						<Button className="mt-2"> Envoyer </Button>
+						<Button className="mt-2 mb-5"> Envoyer </Button>
 					</Col>
 				</Form>
 			</div>
