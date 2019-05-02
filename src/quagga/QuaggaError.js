@@ -91,7 +91,7 @@ class QuaggaError extends Component {
 				{/* <button onClick={this._scan} className="button"> 
   {this.state.scanning ? 'Stop' : 'Scan' }
 	</button> */}
-	<div className="container-fluid quagga">
+	<div className="container-fluid my-4">
 
 
 				{this.props.checked ? (

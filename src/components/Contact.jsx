@@ -11,10 +11,7 @@ export default class Contact extends React.Component {
 					className={`${styles.Form} d-flex flex-column justify-content-center`}
 				>
 					<Row
-						className={`${styles.h1} d-flex justify-content-center`}
-						// xs={{ size: 10, offset: 1 }}
-						// lg={{ size: 6, offset: 3 }}
-						// className={`${styles.h1}`}
+						className={`${styles.h1} mx-0 d-flex justify-content-center`}
 					>
 						CONTACTEZ-NOUS
 					</Row>

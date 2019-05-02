@@ -4,15 +4,14 @@ import FaqCollapse from "./FaqCollapse";
 
 const FaqStyle = {
 	backgroundColor: "white",
-  backgroundImage: 'linear-gradient(to bottom,rgba(254, 222, 79, 0.7),rgba(254, 222, 79, 1))'
-	}
+  backgroundImage: 'linear-gradient(to bottom,rgba(254, 222, 79, 0.7),rgba(254, 222, 79, 1))'	
+}
 
 
 export default function Faq() {
 	return (
 
-		<div style={ FaqStyle }>
-
+		<div style={ FaqStyle } className="py-4">
 			<h1
 				style={{
 					textAlign: "center",

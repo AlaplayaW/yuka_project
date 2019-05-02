@@ -22,26 +22,18 @@ export default class Error extends React.Component {
 		}
 
 		return (
-			<Layout>		
-			<>
+			<Layout>
 				<div className={styles.block}>
-					<div>
-						<p className={styles.textLaptop}>
-							OOOPS ! Le scan du codebarre n'a pas marché...
-						</p>
-						<p className={styles.textLaptop}>
-							Tu peux rentrer ses chiffres à la main en dessous ou réessayer de scanner le code barre en appuyant sur ce bouton
-						</p>
-					</div>
-				
-							<div >
-								<SwitchButton
-									value={inputValue}
-									barcode={inputValue}
-								/>
-							</div>
-					</div>
-				</>
+					<p className={`${styles.textLaptop} mt-4`}>
+						OOOPS ! Le scan du codebarre n'a pas marché...
+					</p>
+					<p className={styles.textLaptop}>
+						Tu peux rentrer ses chiffres à la main en dessous ou réessayer de
+						scanner le code barre en appuyant sur ce bouton
+					</p>
+
+					<SwitchButton value={inputValue} barcode={inputValue} />
+				</div>
 			</Layout>
 		);
 	}
