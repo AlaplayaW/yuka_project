@@ -11,7 +11,7 @@ import styles from "./AboutUs.module.css";
 export default function AboutUs() {
 	return (
 		<div
-			className={`${styles.bgImg} container-fluid`}
+			className={`${styles.bgImg} container-fluid pb-5`}
 		>
 			<Row
 				className={`${

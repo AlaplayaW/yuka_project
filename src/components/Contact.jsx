@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
 						</Col>
 					</FormGroup>
 					<Col xs={{ size: 10, offset: 1 }} lg={{ size: 6, offset: 3 }}>
-						<Button className="mt-2"> Envoyer </Button>
+						<Button className="mt-2 mb-5"> Envoyer </Button>
 					</Col>
 				</Form>
 			</div>

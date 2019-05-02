@@ -11,7 +11,7 @@ const FaqStyle = {
 export default function Faq() {
 	return (
 
-		<div style={ FaqStyle } className="py-4">
+		<div style={ FaqStyle } className="py-4 mb-3">
 			<h1
 				style={{
 					textAlign: "center",
