@@ -37,7 +37,7 @@ class LegendPower extends Component {
 					noteNutriscore: "C",
 					image: NoteC,
 					description:
-						"Bof bof !! Ce produit n'est tip top, tu peux trouver mieux n'hésite pas à chercher encore ;)"
+						"Bof bof !! Ce produit n'est pas tip top, tu peux trouver mieux n'hésite pas à chercher encore ;)"
 				},
 				{
 					power: "FORCE ORANGE",
