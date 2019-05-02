@@ -12,7 +12,6 @@ export default function AboutUs() {
 	return (
 		<div
 			className={`${styles.bgImg} container-fluid`}
-			style={{ minHeight: "84vh" }}
 		>
 			<Row
 				className={`${

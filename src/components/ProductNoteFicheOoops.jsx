@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { CardImg, Card } from "reactstrap";
-// import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
-import Ooops from "../images/Ooops.png";
 
+import unknow from "../images/unknow.png";
 import styles from "./ProductNoteFiche.module.css";
 
 export default function NoteApouvoirFicheOoops() {
 	return (
 		<div>
 			<Card className={styles.cardPowerNote}>
-				<CardImg className={styles.imgNote} src={Ooops} alt="OOOPS" />
+				<CardImg className={styles.imgNote} src={unknow} alt="Mystère" />
 				<p className={styles.powerName}>
-					Ooops nous n'avons pas d'informations sur ce produit
+					Pouvoir mystère, demande à tes parents !
 				</p>
 			</Card>
 		</div>

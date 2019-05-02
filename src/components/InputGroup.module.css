@@ -30,5 +30,6 @@ max-width: 70vw;
     max-width: 90vw !important;
     align-self: center;
     margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 }

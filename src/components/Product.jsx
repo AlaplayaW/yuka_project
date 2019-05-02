@@ -53,13 +53,13 @@ export default class Product extends React.Component {
 		return (
 			<div className={`${styles.Bg} no-gutters p-2 p-sm-4`}>
 				<Jumbotron className={`${styles.CardStyle} no-gutters`}>
-					<Row className={`${styles.infoProduct} p-5 m-md-5`}>
+					<Row className={`${styles.infoProduct} py-3 m-1 m-md-5`}>
 						<Col
 							xs={{ size: 12, order: 2 }}
 							sm={{ size: 4, order: 1 }}
 							className="d-flex justify-content-center"
 						>
-							<img src={this.props.imageUrl} alt="" />
+							<img className="img-thumbnail" src={this.props.imageUrl} alt="" />
 						</Col>
 						<Col
 							xs={{ size: 12, order: 1 }}

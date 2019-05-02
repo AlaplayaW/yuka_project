@@ -42,6 +42,7 @@ export default class FaqCollapse extends React.Component {
 							fontFamily: "Patrick Hand SC",
 							fontSize: "1.2em",
 							width: "80%",
+							color: "#495057"
 						}}
 					>
 						<CardBody className="p-1 m-1">{this.props.description}</CardBody>
