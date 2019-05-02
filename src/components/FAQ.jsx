@@ -18,7 +18,8 @@ export default function Faq() {
 					fontFamily: "Patrick Hand",
 					fontSize: "40px",
 					fontWeight: "bold",
-					color: "#922D61"
+					color: "#922D61",
+					marginBottom: "5vh",
 				}}
 			>
 				FOIRE AUX QUESTIONS
