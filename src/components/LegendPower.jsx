@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { CardDeck, Button, Collapse } from "reactstrap";
+import { CardDeck } from "reactstrap";
 
 import SuperPower from "./SuperPower";
 import AccordionPower from "./AccordionPower";

@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { CardImg, Card, Row, Col } from "reactstrap";
+import React from "react";
+import { CardImg, Row, Col } from "reactstrap";
 // import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 import bio from "../images/bio.png";
 import bioOmbre from "../images/bio_ombre.png";

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { CardImg, Card } from "reactstrap";
 // import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 import NoteC from "../images/noteC.png";

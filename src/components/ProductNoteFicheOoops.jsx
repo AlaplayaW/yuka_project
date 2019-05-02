@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { CardImg, Card } from "reactstrap";
 
 import unknow from "../images/unknow.png";
