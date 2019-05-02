@@ -7,6 +7,7 @@ import styles from "./SearchInput.module.css";
 export default function SearchInput({ onChange, value }) {
 	return (
 		<Input
+			type="number"
 			className={styles.placeholder}
 			value={value}
 			onChange={event => onChange(event.target.value)}
